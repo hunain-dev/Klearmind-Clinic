@@ -1,1 +1,34 @@
 @import "tailwindcss";
+
+
+::-webkit-scrollbar{
+  width: 0%;
+}
+
+@font-face {
+  font-family: 'Figee';
+  src: url('../src/assets/Fonts/figee.ttf');
+}
+
+@font-face {
+  font-family: 'Fontspring';
+  src: url('../src/assets/Fonts/Fontspring-DEMO-peachi-light.otf');
+}
+
+@font-face {
+  font-family: 'FontspringPeachi';
+  src: url('../src/assets/Fonts/Fontspring-DEMO-peachi-thin.otf');
+}
+
+/* Utility classes */
+.figee {
+  font-family: 'Figee', sans-serif;
+}
+
+.fontspring {
+  font-family: 'Fontspring', sans-serif;
+}
+
+.fontspringpeachi {
+  font-family: 'FontspringPeachi', sans-serif
+}
