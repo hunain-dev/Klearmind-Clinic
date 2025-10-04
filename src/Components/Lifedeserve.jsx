@@ -4,7 +4,7 @@ import Button from './Button'
 const Lifedeserve = () => {
   return (
     <div className='h-full  px-40  w-full grid grid-cols-2'>
-      <div className='h-full   overflow-hidden' >
+      <div className='h-full   overflow-hidden p-3' >
         <video src={bloomlife} className='h-full w-full rounded-4xl object-cover' autoPlay loop muted></video>
 
 

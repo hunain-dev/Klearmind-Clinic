@@ -8,7 +8,8 @@ const App = () => {
   return (
     <div>
       <Home/>
-      
+
+      {/* <div className='h-[100vh] w-full'></div> */}
     </div>
   )
 }
