@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import testtonimals from "../../assets/images/testtonimals.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
-const Testimonial = () => {
+const Testimonial = ({img}) => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isFlashing, setIsFlashing] = useState(false);
 
@@ -56,8 +55,13 @@ const Testimonial = () => {
         <div className='h-full  m-auto grid grid-cols-2'>
             <div className='h-full py-5  flex items-start justify-start flex-col gap-1'>
             <p className="figee text-sm text-gray-500 font-medium flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full inline-block"></span>
+            <div className='flex items-center gap-2 justify-center'>
+            <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
+            <span className="figee text-[2vh] uppercase text-gray-600 tracking-wide">
             Client Testimonials
+
+            </span>
+            </div>
           </p>
           <h3 className='fontspring text-[2.6vw] leading-9 text-[#3A1D16] transition-all duration-500 ease-in-out'>
             {testimonials[currentTestimonial].heading}
@@ -73,7 +77,7 @@ const Testimonial = () => {
                 <div className='h-full w-full relative overflow-hidden rounded-3xl'>
                     <div className={`absolute inset-0 bg-white transition-opacity duration-150 ${isFlashing ? 'opacity-100' : 'opacity-0'}`}></div>
                     <img 
-                      src={testtonimals} 
+                      src={img} 
                       className='h-full w-full object-cover transition-all duration-700 ease-in-out transform hover:scale-105' 
                       alt=""
                       key={currentTestimonial}

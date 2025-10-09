@@ -3,7 +3,7 @@ import sunrise from "../../assets/images/sunrise.svg"
 import Button from '../../Components/Button'
   const Therapydelivered = () => {
   return (
-    <div className='m-auto mt-20 '>
+    <div className='m-auto mt-4 pb-25'>
       <div className='relative h-full  p-10 m-auto overflow-hidden flex items-center justify-center'>
         <img src={sunrise} className='h-[32vw]  object-contain' alt="" />
         

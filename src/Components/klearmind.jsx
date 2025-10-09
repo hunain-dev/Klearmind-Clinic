@@ -24,7 +24,7 @@ const Klearmind = () => {
         }
     ]
   return (
-    <div className=' w-[70%] m-auto grid grid-cols-2 bg-[#FDF9E9] mt-30 p-5'>
+    <div className=' w-[70%] m-auto grid grid-cols-2 bg-[#FDF9E9]  p-5'>
         <div className='h-full'>
             <h2 className='figee text-[1vw]'>What is klearmind</h2>
             <h1 className='fontspring text-[2.5vw]'>Is This Right for Me?</h1>

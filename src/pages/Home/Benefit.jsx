@@ -3,7 +3,7 @@ import Button from '../../Components/Button'
 import VA from "../../assets/images/VA.png"
 const Benefit = () => {
   return (
-    <div className=' w-full m-auto mt-35 p-10 px-38'>
+    <div className=' w-full m-auto mt-23 p-10 px-38'>
         <div className='h-full  rounded-3xl grid grid-cols-2 overflow-hidden bg-[#F8EEEC] m-auto'>
             <div className='h-full px-7 py-7'>
                 <h3 className='figee text-[1.9vh] mb-5'>Benefit for Veterans Affairs</h3>

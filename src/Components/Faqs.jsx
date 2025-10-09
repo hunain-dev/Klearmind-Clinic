@@ -37,8 +37,8 @@ const Faqs = () => {
 
 
   return (
-    <div className=' w-full grid grid-cols-2 px-40 mt-22'>
-        <div className='h-full  p-3'>
+    <div className=' w-full grid grid-cols-2 px-40 mt-22 '>
+        <div className='h-full p-3'>
         <div className="flex items-start flex-col gap-2 whitespace-nowrap  ">
             <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
