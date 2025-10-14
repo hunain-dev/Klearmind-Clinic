@@ -173,7 +173,7 @@ const IVInfusions = () => {
   ];
 
   return (
-    <div className='h-full w-full grid grid-cols-1 mt-30 px-39'>
+    <div className='h-full w-full grid grid-cols-1 lg:mt-30 mt-10 lg:px-39'>
       <div className='h-full flex items-center justify-start flex-col gap-2'>
         <div className='flex items-center gap-2 justify-center'>
           <span className="w-2 h-2 rounded-full bg-orange-500"></span>

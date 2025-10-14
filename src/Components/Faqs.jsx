@@ -37,36 +37,38 @@ const Faqs = () => {
 
 
   return (
-    <div className=' w-full grid grid-cols-2 px-40 mt-22 '>
+    <div className=' w-full grid lg:grid-cols-2 grid-cols-1 lg:px-40 px-0 lg:mt-22 '>
         <div className='h-full p-3'>
         <div className="flex items-start flex-col gap-2 whitespace-nowrap  ">
             <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[2vh] uppercase text-gray-600 tracking-wide">
-              Faqs
+            <span className="figee text-[2vh] text-gray-600 tracking-wide">
+              FAQS
             </span>
             </div>
            
             <h2 className='figee text-4xl font-[400] text-[#361911]'>What our customers <br /> want to know</h2>
-            <div className='flex gap-2 mt-1'>
-            <Button btn="book an appointment" padding="py-3 px-7" bgcolor="#FD8124" textcolor="white"  border="border-none"/>
-            <Button btn="Learn more" padding="py-1 px-8" hoverEffect={false} textcolor="black" border="border border-black"/>
+            <div className="flex flex-col sm:flex-row lg:gap-2 gap-3 mt-1">
+            <Button btn="book an appointment" to="https://calendly.com/klearmindclinics" padding="lg:py-3 lg:px-7 py-3 px-6" bgcolor="#FD8124" textcolor="white"  border="border-none"/>
+
+
+            <Button btn="Learn more" padding="lg:py-3 lg:px-7 py-3 px-6" hoverEffect={false} textcolor="black" border="border border-black"/>
 
             </div>
           </div>
 
         </div>
         <div className='h-full '>
-           <div className="py-12 px-1">
-      <div className="space-y-7">
+           <div className="lg:py-12 py-9 lg:px-1 px-4">
+      <div className="lg:space-y-7 space-y-10">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border-b border-gray-400 pb-4 cursor-pointer"
+            className="border-b border-gray-400 lg:pb-4 cursor-pointer"
             onClick={() => toggleFAQ(index)}
           >
             <div className="figee flex justify-between items-center">
-              <h3 className="text-[1.6vw] text-[#222221FF] ">{faq.question}</h3>
+              <h3 className="lg:text-[1.6vw] text-[4.4vw] text-[#222221FF] ">{faq.question}</h3>
               <span className="text-xl">{activeIndex === index ? "−" : "+"}</span>
             </div>
             <div
@@ -74,7 +76,7 @@ const Faqs = () => {
                 activeIndex === index ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"
               }`}
             >
-              <p className="text-gray-600">{faq.answer}</p>
+              <p className="text-gray-600 ">{faq.answer}</p>
             </div>
           </div>
         ))}

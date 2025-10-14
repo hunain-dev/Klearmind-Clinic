@@ -9,7 +9,7 @@ import Ketamineinfusion from "./pages/ketamineinfusion/ketamineinfusion";
 const App = () => {
     const scroll = new LocomotiveScroll();
 return (
-    <div>
+    <div className="">
           <Loader/> 
 
         <Routes>

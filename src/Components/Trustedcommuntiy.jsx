@@ -17,27 +17,27 @@ const Trustedcommuntiy = () => {
   }, []);
 
   return (
-    <div className="w-full mt-14 px-40 py-5">
-      <div className="w-[98%] bg-[#FDF9E9] rounded-4xl grid grid-cols-1 py-16">
+    <div className="w-full lg:mt-14 lg:px-40 py-5 lg:p-0 p-5">
+      <div className="lg:w-[98%] bg-[#FDF9E9] rounded-4xl grid grid-cols-1 py-10 lg:py-16">
         {/* Top text section */}
-        <div className="h-full flex items-center justify-center flex-col text-center gap-3 ">
+        <div className="h-full lg:p-0 p-2 flex items-center justify-center flex-col text-center gap-3 ">
           <div className="flex items-center gap-2 whitespace-nowrap justify-center ">
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[2vh] text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] text-[3vw] text-gray-600 tracking-wide">
               Award-Winning Care, Year After Year
             </span>
           </div>
-          <h2 className="fontspring text-[#361810] text-4xl">
+          <h2 className="fontspring text-[#361810] lg:text-4xl lg:leading-0 leading-10 text-[8vw]">
             Trusted by the Sacramento community <br />
             ten years and counting
           </h2>
         </div>
 
         {/* Circle inside the box */}
-        <div className="relative mt-10 flex items-center justify-center overflow-hidden">
+        <div className="relative lg:mt-10 flex items-center justify-center overflow-hidden">
           <div 
             ref={circleRef}
-            className="circle relative w-[10vw] h-[24vw] flex items-center justify-center"
+            className="circle relative w-60 h-86 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
           >
             {[...Array(8)].map((_, i) => {
               const angle = (i / 8) * 360; // 8 positions evenly

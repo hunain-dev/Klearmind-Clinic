@@ -3,32 +3,32 @@ import Button from '../../Components/Button'
 
 const VitaminIV = () => {
   return (
-    <div className=' w-full relative mt-30 px-40 '>
-     <div className='rounded-3xl grid grid-cols-[60%_40%] justify-center h-full w-full bg-[#FDF9E9]'>
-  <div className='h-full p-4 py-8 flex items-start justify-between flex-col'>
+    <div className=' w-full relative mt-30 px-3 lg:px-40 '>
+     <div className='rounded-3xl grid lg:grid-cols-[60%_40%] grid-cols-1 justify-center h-full w-full bg-[#FDF9E9]'>
+  <div className='h-full lg:p-4 lg:py-8 p-1 py-4 flex items-start justify-between flex-col'>
     <div className='w-full px-3'>
     <div className='flex items-center gap-2 justify-start '>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[1.7vh]  tracking-wide">
+            <span className="figee lg:text-[1.7vh]  text-[2vh] tracking-wide">
             Treatment Benefits
             </span>
             </div>
             
-            <h3 className='figee text-4xl mt-7 text-[#32140C]'>The Power of Vitamin IV Therapy
+            <h3 className='figee lg:text-4xl text-3xl lg:mt-7 mt-5 text-[#32140C]'>The Power of Vitamin IV Therapy
             </h3>
     </div>
 
-    <div className='w-full-400 px-3 '>           
+    <div className='w-full-400 lg:px-3 px-3 '>           
    
-            <h4 className='figee text-[2.3vh] pb-6 mt-8 text-[#7D7871]'>
+            <h4 className='figee lg:text-[2.3vh] text-[2.5vh] lg:pb-6 pb-5 lg:mt-8 mt-3 text-[#7D7871]'>
             IV Vitamin Therapy when compared to oral supplements does show significant effectiveness over the oral route which delivers superior and potent doses of <br /> nutrients that bypass your digestive system. FSA/HSA is accepted for all <br /> wellness treatments.
 
             </h4>
-            <Button btn="Learn more" padding="py-3 px-13" hoverEffect={false}/>
+            <Button btn="Learn more" padding="lg:py-3 py-2 lg:px-11 px-5" hoverEffect={false}/>
     </div>
   </div>
-  <div className='h-full  '>
-    <img src="https://cdn.prod.website-files.com/68235d19001da11fe701c90e/6838396f1e145a96c4f81eda_83cebfdb2c55cd5999898def9addedcb%201.avif" alt="" className='h-[37vw] object-cover' />
+  <div className='lg:h-full  '>
+    <img src="https://cdn.prod.website-files.com/68235d19001da11fe701c90e/6838396f1e145a96c4f81eda_83cebfdb2c55cd5999898def9addedcb%201.avif" alt="" className='lg:h-[37vw] object-cover' />
   </div>
 </div>
     </div>

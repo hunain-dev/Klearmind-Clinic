@@ -21,6 +21,24 @@
 }
 
 
+/* For custom scrollbar styling */
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #fd8124;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f3f3;
+}
+
+
+html,body{
+  overflow-x: hidden;
+  
+}
+
 .figee {
   font-family: 'Figee', sans-serif;
 }
@@ -32,3 +50,4 @@
 .fontspringpeachi {
   font-family: 'FontspringPeachi', sans-serif
 }
+

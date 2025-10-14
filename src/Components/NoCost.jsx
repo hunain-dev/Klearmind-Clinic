@@ -19,8 +19,8 @@ const NoCost = ({img,pretext,text}) => {
         }
     ]
   return (
-    <div className=' rounded-3xl grid grid-cols-2  w-full bg-[#FDF9E9] overflow-hidden'>
-        <div className='h-full p-6'>
+    <div className=' rounded-3xl grid lg:grid-cols-2 grid-cols-1    w-full bg-[#FDF9E9] overflow-hidden'>
+        <div className='h-full   lg:p-6 lg:py-3 py-6 lg:px-6 px-3'>
         <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full  bg-[#FD8124]"></span>
             <span className="figee text-[1.8vh]  text-gray-600 tracking-wide">
@@ -28,13 +28,13 @@ const NoCost = ({img,pretext,text}) => {
 
             </span>
             </div>
-            <h2 className='figee text-[#34160E] text-4xl mt-2 '>{text}</h2>
+            <h2 className='figee text-[#34160E] lg:text-4xl text-4xl mt-2 '>{text}</h2>
 
-            <div className="w-full grid grid-cols-1 gap-8 mt-5 pb-5">
+            <div className="w-full grid grid-cols-1 lg:gap-8 gap-4 lg:mt-5 mt-4 pb-5">
             {
                     nocost.map((elem,index)=>{
                         return(
-                            <h2 key={index} className='figee text-sm text-[#56514C]'  >{elem.text}</h2>
+                            <h2 key={index} className='figee lg:text-sm text-[4vw] text-[#56514C]'  >{elem.text}</h2>
 
                         )
                     })

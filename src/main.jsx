@@ -7,12 +7,14 @@ import Footer from './Components/Footer.jsx'
 import Aiassistantt from './Components/Aiassistantt.jsx'
 import Loader from './Components/Loader.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import Menu from './Components/Menu.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
     <Aiassistantt/>
     <Header/>
+    <Menu/>
     <App />
     <Footer/>
     </BrowserRouter>

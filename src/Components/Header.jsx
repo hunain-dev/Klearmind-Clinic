@@ -18,9 +18,9 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed w-full z-50 px-40 text-[#282A2F] flex items-center justify-between transition-all duration-500 
-      ${isScrolled ? "backdrop-blur-lg bg-white/60" : "bg-transparent"}`}
-    >
+    className={`hidden lg:flex fixed w-full z-50 px-40 text-[#282A2F] items-center justify-between transition-all duration-500 
+    ${isScrolled ? "backdrop-blur-lg bg-white/60" : "bg-transparent"}`}
+  >
       {/* Left Logo */}
       <div className="py-4">
         <Link to="/">
@@ -51,21 +51,21 @@ const Header = () => {
   </h4>
 
   {openDropdown && (
-    <div className="absolute flex flex-col items-start justify-start top-7 left-0 bg-white border border-gray-300 rounded-xl z-50 gap-3 w-44 px-5 py-3 shadow-lg">
-      <h2 className="hover:text-[#6b4dee] transition duration-200 cursor-pointer">
+    <div className="absolute flex flex-col items-start justify-start top-5 left-0 bg-white border border-gray-300 rounded-xl z-50 gap-4 w-33 px-2 py-4 shadow-lg">
+      <Link to="/Ketamineinfusion"> <h2 className="hover:text-black transition duration-200 cursor-pointer">
         Ketamine Infusion
-      </h2>
-      <h2 className="hover:text-[#6b4dee] transition duration-200 cursor-pointer">
+      </h2></Link> 
+    <Link to="/Wellnesthraypy"><h2 className="hover:text-black transition duration-200 cursor-pointer">
         Wellness Therapy
-      </h2>
+      </h2></Link>  
     </div>
   )}
 </div>
 
 
 
-        <h4>Patient Portal</h4>
-
+     <Link hrefLang="/https://phr.charmtracker.com/login.sas?FACILITY_ID=d1c1a0dc62345265d5a5f433f503b5e7bdeb891e39118f0098ee2e5ce9d5cc8ae52254af78d5434b"> <h4>Patient Portal</h4></Link>  
+        
         <Button
           btn="am i a candidate?"
           padding="py-2"

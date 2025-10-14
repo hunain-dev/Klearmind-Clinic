@@ -151,7 +151,7 @@ const Ourplan = () => {
   ];
 
   return (
-    <div className="w-full grid grid-cols-3 gap-5 mt-20 mb-40">
+    <div className="w-full grid lg:grid-cols-3 grid-cols-1 lg:px-0 px-3 gap-5 lg:mt-20 mt-13 lg:mb-40 mb-27 ">
       {plans.map((plan, index) => (
         <div
           key={index}

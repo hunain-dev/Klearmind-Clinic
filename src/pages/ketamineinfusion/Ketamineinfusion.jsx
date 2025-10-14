@@ -4,9 +4,11 @@ import Ourplan from './Ourplan'
 import NoCost from '../../Components/NoCost'
 import fruit from "../../assets/images/fruit.png"
 import ImpactinNumbers from './ImpactinNumbers'
+import Loader from '../../Components/Loader'
 const Ketamineinfusion = () => {
   return (
-    <div className='w-full py-34 px-40'>
+    <div className='w-full lg:py-34 py-20 lg:px-40'>
+<Loader/>
         <KetamineinfusionLanding/>
         <Ourplan/>
         <NoCost  img={fruit} pretext="Treatment Overview" text={<>
