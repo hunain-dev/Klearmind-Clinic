@@ -9,8 +9,12 @@ import Button from '../../Components/Button'
         
 
         <div className='absolute h-full lg:mt-53 mt-30 md:mt-41  flex items-center flex-col justify-center text-center lg:gap-2 gap-2'>
-          <h3 className='figee lg:text-[1vw] text-[3vw] md:text-[1.3vw]'>What Is Klearmind?</h3>
-          <h2 className='fontspring lg:text-[3.1vw] md:text-[4vw] lg:leading-14 text-3xl text-[#361911]'>Ketamine therapy delivered <br /> in a calm and compassionate <br /> environment</h2>
+        <div className='flex items-center gap-2 justify-start  lg:pb-0 pb-1'>
+            <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
+            <span className="figee lg:text-[2vh] md:text-[2vw] text-[3vw]  text-gray-600 tracking-wide">
+            What Is Klearmind?
+            </span>
+            </div>                <h2 className='fontspring lg:text-[3.1vw] md:text-[4vw] lg:leading-14 text-2xl text-[#361911]'>Ketamine therapy delivered <br /> in a calm and compassionate <br /> environment</h2>
           <Button 
   btn="Learn more" 
   padding="lg:py-3 lg:px-9  py-2" 

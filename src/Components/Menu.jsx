@@ -58,9 +58,9 @@ const Menu = () => {
   return (
     <div className="fixed top-0 left-0 w-full z-[999] lg:hidden ">
 
-      <div className="py-4 lg:px-2 flex lg:items-center  lg:gap-12 md:gap-115 gap-17  md:px-5">
+      <div className="py-4 lg:px-2 flex lg:items-center  lg:gap-12 md:gap-115 gap-14  md:px-5">
         <Link to="/">
-          <img src={Logo} alt="Logo" className=" md:h-[4vw] lg:h-[7vw]  h-[7vw] object-contain" />
+          <img src={Logo} alt="Logo" className=" md:h-[4vw] lg:h-[7vw]  h-[6.3vw] object-contain" />
         </Link>
         
       <div>

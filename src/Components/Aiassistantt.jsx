@@ -94,7 +94,7 @@ You can also book an appointment directly here:
 
       {/* Chat Window */}
       {open && chatOpen && (
-        <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw] md:max-h-[71.8333vw] md:w-[61.6667vw]    w-[93vw]  bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
+        <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw] md:max-h-[71.8333vw] md:w-[61.6667vw]    w-[93vw]   bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
 
         <div className="flex justify-between items-start mb-3">
 
@@ -106,7 +106,7 @@ You can also book an appointment directly here:
 
             </button>
             <button
-              className="text-gray-600 cursor-pointer hover:text-black text-3xl"
+              className="text-gray-600 cursor-pointer hover:text-black text-2xl"
               onClick={() => setOpen(false)}
             >
               <AiOutlineMinus />
