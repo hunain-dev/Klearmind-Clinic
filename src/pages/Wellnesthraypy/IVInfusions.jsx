@@ -2,7 +2,7 @@ import React from 'react'
 import blood from "../../assets/images/blood.png"
 import Button from '../../Components/Button'
 
-const IVInfusions = () => {
+const   IVInfusions = () => {
   const infusionCards = [
     {
       id: 1,
@@ -173,18 +173,18 @@ const IVInfusions = () => {
   ];
 
   return (
-    <div className='h-full w-full grid grid-cols-1 lg:mt-30 mt-10 lg:px-39'>
+    <div className='h-full w-full grid grid-cols-1 lg:mt-30 mt-10 md:mt-25 lg:px-39'>
       <div className='h-full flex items-center justify-start flex-col gap-2'>
         <div className='flex items-center gap-2 justify-center'>
           <span className="w-2 h-2 rounded-full bg-orange-500"></span>
-          <span className="figee text-[1.7vh] text-gray-600 tracking-wide">
+          <span className="figee lg:text-[1.7vh] md:text-[1.5vw]  text-gray-600 tracking-wide">
             Treatment Overview
           </span>
         </div>
-        <h2 className='figee text-4xl text-[#32140C]'>IV Infusions</h2>
+        <h2 className='figee lg:text-4xl md:text-3xl text-3xl  text-[#32140C]'>IV Infusions</h2>
       </div> 
 
-      <div className='h-full mt-15 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+      <div className='h-full mt-15 grid grid-cols-1 md:grid-cols-2   lg:grid-cols-3 gap-6'>
         {infusionCards.map((card) => (
           <div key={card.id} className="group [perspective:1000px]">
             <div className="relative w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
@@ -231,7 +231,8 @@ const IVInfusions = () => {
                   btn="Book an appointment" 
                   bgcolor="#FD8124" 
                   textcolor="white" 
-                  padding="py-3 px-25" 
+                  padding="lg:py-3 lg:px-25 md:py-3"
+                  fontSize='lg:text-2xl md:text-2xl' 
                   border="border" 
                   hoverEffect={true}
                 />

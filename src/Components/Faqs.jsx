@@ -37,22 +37,24 @@ const Faqs = () => {
 
 
   return (
-    <div className=' w-full grid lg:grid-cols-2 grid-cols-1 lg:px-40 px-0 lg:mt-22 '>
+    <div className=' w-full grid lg:grid-cols-2 grid-cols-1  md:grid-cols-2 lg:px-40 px-0 lg:mt-22 lg:pb-0 md:pb-22 '>
         <div className='h-full p-3'>
         <div className="flex items-start flex-col gap-2 whitespace-nowrap  ">
             <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[2vh] text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] md:text-[3vw] text-gray-600 tracking-wide">
               FAQS
             </span>
             </div>
            
-            <h2 className='figee text-4xl font-[400] text-[#361911]'>What our customers <br /> want to know</h2>
+            <h2 className='figee lg:text-4xl md:text-3xl font-[400] text-[#361911]'>What our customers <br /> want to know</h2>
             <div className="flex flex-col sm:flex-row lg:gap-2 gap-3 mt-1">
-            <Button btn="book an appointment" to="https://calendly.com/klearmindclinics" padding="lg:py-3 lg:px-7 py-3 px-6" bgcolor="#FD8124" textcolor="white"  border="border-none"/>
+            <Button btn="book an appointment" to="https://calendly.com/klearmindclinics"  fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'
+              padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3"  bgcolor="#FD8124" textcolor="white"  border="border-none"/>
 
 
-            <Button btn="Learn more" padding="lg:py-3 lg:px-7 py-3 px-6" hoverEffect={false} textcolor="black" border="border border-black"/>
+            <Button btn="Learn more"     padding="lg:py-3 py-3 lg:px-6 px-11 md:px-8 md:py-2   " 
+              fontSize='md:text-[1.8vw] lg:text-[1vw] text-[3.2vw]' hoverEffect={false} textcolor="black" border="border border-black"/>
 
             </div>
           </div>
@@ -68,7 +70,7 @@ const Faqs = () => {
             onClick={() => toggleFAQ(index)}
           >
             <div className="figee flex justify-between items-center">
-              <h3 className="lg:text-[1.6vw] text-[4.4vw] text-[#222221FF] ">{faq.question}</h3>
+              <h3 className="lg:text-[1.6vw] text-[4.4vw] md:text-[2.1vw] text-[#222221FF] ">{faq.question}</h3>
               <span className="text-xl">{activeIndex === index ? "−" : "+"}</span>
             </div>
             <div

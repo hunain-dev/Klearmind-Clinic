@@ -8,12 +8,12 @@ const KetamineinfusionLanding = () => {
         <div className='h-full w-full  text-center flex items-center lg:gap-4 gap-1 justify-start flex-col'>
         <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[1.7vh] text-[3.6vw]  text-gray-600 tracking-wide">
+            <span className="figee lg:text-[1.7vh] md:text-[1.3vh] text-[3.6vw]  text-gray-600 tracking-wide">
             Affordable, Accessible Care
 
             </span>
             </div>
-            <h2 className='fontspring lg:text-5xl text-[7.9vw] text-[#32140C]'>Invest in Feeling Better
+            <h2 className='fontspring lg:text-5xl md:text-4xl text-[7.9vw] text-[#32140C]'>Invest in Feeling Better
             </h2>
         </div>
         <div className='h-full w-full lg:mt-20 mt-9 lg:px-0 px-1'>
@@ -22,7 +22,7 @@ const KetamineinfusionLanding = () => {
 
                 </>}/>
             
-
+              
         </div>
 
       

@@ -4,7 +4,7 @@ import bloomlife from "../../assets/Video/bloomlife.mp4"
 
 const HomeLanding = () => {
   return (
-    <div className='lg:py-14 py-0 h-full w-full'>
+    <div className='lg:py-14 md:py-19 py-0 h-full w-full'>
 <Lifedeserve videoSrc={bloomlife} />
       
     </div>

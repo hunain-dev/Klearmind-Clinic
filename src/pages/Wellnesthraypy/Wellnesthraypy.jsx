@@ -26,7 +26,10 @@ const Wellnesthraypy = () => {
         <Ourmission/> 
         <Invest/> 
         <Testimonial img={smiling}/> 
-        <Faqs/> 
+     
+        <div className='lg:mt-0 md:mt-12 '>
+  <Faqs/>
+</div>
     </div>
   )
 }

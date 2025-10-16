@@ -31,30 +31,30 @@ const Invest = () => {
         
     ]
   return (
-    <div className=' w-full lg:mt-20 mt-5 grid grid-cols-1 lg:px-40'>
+    <div className=' w-full lg:mt-20 mt-5 grid grid-cols-1 lg:px-40 md:mt-15'>
         <div className='h-full  flex items-center lg:justify-start  gap-4 flex-col'>
         <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[1.7vh]  text-gray-600 tracking-wide">
+            <span className="figee text-[1.7vh] md:text-[1.8vw]  text-gray-600 tracking-wide">
             Affordable, Accessible Care
 
             </span>
             </div>
-            <h2 className='fontspring lg:text-5xl text-4xl text-[#32140C]'>Invest in Feeling Better
+            <h2 className='fontspring lg:text-5xl text-4xl md:text-[4.3vw] text-[#32140C]'>Invest in Feeling Better
             </h2>
         </div>
-        <div className=' lg:mt-15 mt-9  grid lg:grid-cols-2 grid-cols-1 rounded-3xl overflow-hidden'>
+        <div className=' lg:mt-15 mt-9  grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 rounded-3xl overflow-hidden'>
   {/* Left Side */}
   <div className='px-4  flex flex-col gap-1 '>
   <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[1.7vh]  text-gray-600 tracking-wide">
+            <span className="figee text-[1.7vh]  md:text-[1.8vw]  text-gray-600 tracking-wide">
             Intramuscular
 
 
             </span>
             </div>
-    <h1 className='figee lg:text-4xl text-3xl  text-[#32140C]'>Wellness Injections</h1>
+    <h1 className='figee lg:text-4xl text-3xl  md:text-[3.3vw]   text-[#32140C]'>Wellness Injections</h1>
 
 
 
@@ -63,8 +63,8 @@ const Invest = () => {
     investamout.map((elem,index)=>{
         return(
             <div key={index} className='figee flex justify-between border-b border-gray-300 pb-2'>
-            <p>{elem.text}<br/><span className='text-gray-500 lg:text-sm text-[5.3vw]'>{elem.paragh}</span></p>
-            <p className='figee lg:text-2xl text-[5.1vw]'>{elem.amount}</p>
+            <p>{elem.text}<br/><span className='text-gray-500 lg:text-sm text-[5.3vw]  md:text-[1.8vw]'>{elem.paragh}</span></p>
+            <p className='figee lg:text-2xl text-[5.1vw] md:text-[3vw]'>{elem.amount}</p>
            
           </div>
           
@@ -75,7 +75,8 @@ const Invest = () => {
               btn="Book an appointment" 
               bgcolor="#FD8124" 
               textcolor="white" 
-              padding="py-3" 
+              padding="lg:py-3 md:py-3 py-3" 
+              fontSize='lg:text-[2vw] md:text-[1.7vw]'
               border="border" 
               hoverEffect={true}
             />

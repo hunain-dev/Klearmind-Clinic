@@ -51,28 +51,28 @@ const Testimonial = ({img}) => {
     }, 150);
   };
   return (
-    <div className=' lg:w-[78%] w-full m-auto  lg:mt-15'>
-        <div className='h-full  m-auto grid lg:grid-cols-2 grid-cols-1'>
+    <div className=' lg:w-[78%] w-full m-auto  lg:mt-15 md:mt-10'>
+        <div className='h-full  m-auto grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1'>
             <div className='h-full py-5 lg:px-0 px-8  flex items-start justify-start flex-col gap-1'>
             <p className="figee text-sm text-gray-500 font-medium flex items-center gap-2">
             <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[2vh] text-[3vw] text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] text-[3vw] md:text-[1.8vw] text-gray-600 tracking-wide">
             Client Testimonials
 
             </span>
             </div>
           </p>
-          <h3 className='fontspring lg:text-[2.6vw] ;g:leading-9 text-3xl  text-[#3A1D16] transition-all duration-500 ease-in-out'>
+          <h3 className='fontspring lg:text-[2.6vw] lg:leading-9 text-3xl  md:text-[2.5vw] text-[#3A1D16] transition-all duration-500 ease-in-out'>
             {testimonials[currentTestimonial].heading}
           </h3>
-         <div className='text-[#383736] figee lg:mt-28 mt-7 flex items-start justify-start flex-col gap-8 transition-all duration-500 ease-in-out'>
+         <div className='text-[#383736] figee lg:mt-28 mt-7   flex items-start justify-start flex-col gap-8 transition-all duration-500 ease-in-out'>
             <h4>{testimonials[currentTestimonial].text}</h4>
             <h5>{testimonials[currentTestimonial].name} <br />
             {testimonials[currentTestimonial].location}</h5>
          </div>
             </div>
-            <div className='h-full   lg:px-26 px-5 '>
+            <div className='h-full   lg:px-26 px-5 md:px-15 '>
                 <div className='h-full w-full relative overflow-hidden rounded-3xl'>
                     <div className={`absolute inset-0 bg-white transition-opacity duration-150 ${isFlashing ? 'opacity-100' : 'opacity-0'}`}></div>
                     <img 

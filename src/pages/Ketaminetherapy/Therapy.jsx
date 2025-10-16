@@ -51,29 +51,25 @@ const Therapy = () => {
         <div className='h-full flex items-center justify-center gap-2 flex-col'>
         <div className='flex items-center gap-2 justify-center '>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[1.7vh] text-[3vw]  tracking-wide">
+            <span className="figee lg:text-[1.7vh] text-[3vw] md:text-[1.3vw]  tracking-wide">
             Treatment Overview
 
             </span>
             </div>
-            <h2 className='figee text-[#32140C] lg:text-3xl  text-center text-4xl mt-1' >How does Ketamine Therapy work?
+            <h2 className='figee text-[#32140C] lg:text-3xl md:text-[3vw]  text-center text-4xl mt-1' >How does Ketamine Therapy work?
             </h2>
             <div className='lg:mt-5 mt-4'>
-            <Button  btn="Watch the explainer video" padding="py-3 px-9" hoverEffect={false}/>
+            <Button  btn="Watch the explainer video"  padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3   " 
+              fontSize='md:text-[1vw] lg:text-[1vw] text-[3.2vw]' hoverEffect={false}/>
 
             </div>
         </div>
-        <div className='h-full lg:px-39 '>
+        <div className='h-full lg:px-39  '>
             <div className=' w-full'>
-
-
-            <section className=" grid grid-cols-1 lg:py-6">
-
-
-     
+            <section className=" grid grid-cols-1 lg:py-6 ">
       <div className="relative">
       <div 
-        className="absolute lg:left-[calc(11.1vw+27.1vw)] left-[calc(3vw+1vw)] lg:top-64 top-21  w-[2px] lg:h-[79%] h-[97%] transition-all duration-200 ease-out"
+        className="absolute lg:left-[calc(11.1vw+27.1vw)] md:left-[calc(23.1vw+27.1vw)] left-[calc(3vw+1vw)] lg:top-64 top-21  w-[2px] lg:h-[79%] md:h-[86%] h-[97%] transition-all duration-200 ease-out"
         style={{
           background: `linear-gradient(to bottom, 
             rgb(251 146 60) ${scrollProgress * 100}%, 
@@ -87,7 +83,7 @@ const Therapy = () => {
             return(
                 <div  key={index} className="relative lg:mb-0 mb-13 lg:mt-0 mt-8 lg:px-5 flex flex-col md:flex-row items-center gap-16">
                 {/* Left Image */}
-                <div className="w-full  lg:p-19 p-7 lg:md:w-1/2   flex justify-center">
+                <div className="w-full  lg:p-19 p-7 lg:w-1/2   md:w-1/2 md:p-12   flex justify-center">
                   <img
                     src={elem.img}
                     alt="Initial introduction"
@@ -98,17 +94,17 @@ const Therapy = () => {
                 {/* Right Content */}
                 <div className="w-full md:w-1/2 relative">
                   {/* Circle Number positioned on the main line */}
-                  <div className="absolute lg:left-[-4vw] left-[1.4vw] lg:top-5  -top-135 flex flex-col items-center">
+                  <div className="absolute lg:left-[-4vw] md:left-[-5.7vw] left-[1.4vw] lg:top-5  -top-135  md:-top-1  flex flex-col items-center">
                     <div className="w-6 h-6 bg-[#FD8124] rounded-full flex items-center justify-center text-black figee text-sm font-bold z-10">
                       {index + 1}
                     </div>
                   </div>
         
                   <div className="lg:pl-10 lg:pt-0 -pt-20 lg:mt-0 -mt-17 lg:px-0 px-13">
-                    <h3 className="figee lg:text-[1.5vw] text-[6vw] text-[#3F3B3B] mb-2 lg:mb-4">
+                    <h3 className="figee lg:text-[1.5vw] text-[6vw] md:text-[2vw] text-[#3F3B3B] mb-2 lg:mb-4">
                       {elem.text}
                     </h3>
-                    <p className="text-[#555] figee lg:text-sm text-[5vw] lg:mt-8">
+                    <p className="text-[#555] figee lg:text-sm md:text-[1.4vw] text-[5vw] lg:mt-8">
                     {elem.paragh}
                     </p>
                   </div>

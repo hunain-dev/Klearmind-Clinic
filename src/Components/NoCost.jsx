@@ -19,22 +19,22 @@ const NoCost = ({img,pretext,text}) => {
         }
     ]
   return (
-    <div className=' rounded-3xl grid lg:grid-cols-2 grid-cols-1    w-full bg-[#FDF9E9] overflow-hidden'>
+    <div className=' rounded-3xl grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2    w-full bg-[#FDF9E9] overflow-hidden'>
         <div className='h-full   lg:p-6 lg:py-3 py-6 lg:px-6 px-3'>
         <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full  bg-[#FD8124]"></span>
-            <span className="figee text-[1.8vh]  text-gray-600 tracking-wide">
+            <span className="figee lg:text-[1.8vh] md:text-[2vw]  text-gray-600 tracking-wide">
            {pretext}
 
             </span>
             </div>
-            <h2 className='figee text-[#34160E] lg:text-4xl text-4xl mt-2 '>{text}</h2>
+            <h2 className='figee text-[#34160E] lg:text-4xl  md:text-3xl text-4xl mt-2 '>{text}</h2>
 
             <div className="w-full grid grid-cols-1 lg:gap-8 gap-4 lg:mt-5 mt-4 pb-5">
             {
                     nocost.map((elem,index)=>{
                         return(
-                            <h2 key={index} className='figee lg:text-sm text-[4vw] text-[#56514C]'  >{elem.text}</h2>
+                            <h2 key={index} className='figee lg:text-sm text-[4vw] md:text-sm  text-[#56514C]'  >{elem.text}</h2>
 
                         )
                     })
@@ -44,8 +44,8 @@ const NoCost = ({img,pretext,text}) => {
               btn="Book an appointment" 
               bgcolor="#FD8124" 
               textcolor="white" 
-              padding="py-3" 
-              border="border" 
+              fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'
+              padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3"               border="border" 
               hoverEffect={true}
             />
         </div>

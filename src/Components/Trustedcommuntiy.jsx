@@ -23,18 +23,18 @@ const Trustedcommuntiy = () => {
         <div className="h-full lg:p-0 p-2 flex items-center justify-center flex-col text-center gap-3 ">
           <div className="flex items-center gap-2 whitespace-nowrap justify-center ">
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[2vh] text-[3vw] text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] text-[3vw] md:text-[2vw] text-gray-600 tracking-wide">
               Award-Winning Care, Year After Year
             </span>
           </div>
-          <h2 className="fontspring text-[#361810] lg:text-4xl lg:leading-0 leading-10 text-[8vw]">
+          <h2 className="fontspring text-[#361810] lg:text-4xl md:text-3xl md:leading-9 lg:leading-0 leading-10 text-[8vw]">
             Trusted by the Sacramento community <br />
             ten years and counting
           </h2>
         </div>
 
         {/* Circle inside the box */}
-        <div className="relative lg:mt-10 flex items-center justify-center overflow-hidden">
+        <div className="relative lg:mt-10 md:mt-10 flex items-center justify-center overflow-hidden">
           <div 
             ref={circleRef}
             className="circle relative w-60 h-86 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"

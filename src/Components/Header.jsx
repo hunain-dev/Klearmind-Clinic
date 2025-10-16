@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <div
-    className={`hidden lg:flex fixed w-full z-50 px-40 text-[#282A2F] items-center justify-between transition-all duration-500 
+    className={`hidden md:opacity-1 lg:opacity-100 lg:flex fixed w-full z-50 px-40 text-[#282A2F] items-center justify-between transition-all duration-500 
     ${isScrolled ? "backdrop-blur-lg bg-white/60" : "bg-transparent"}`}
   >
       {/* Left Logo */}

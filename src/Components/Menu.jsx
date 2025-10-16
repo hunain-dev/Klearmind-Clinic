@@ -56,11 +56,11 @@ const Menu = () => {
   }, [open]);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-[999] lg:hidden">
+    <div className="fixed top-0 left-0 w-full z-[999] lg:hidden ">
 
-      <div className="py-4 px-2 flex items-center center gap-12">
+      <div className="py-4 lg:px-2 flex lg:items-center  lg:gap-12 md:gap-115 gap-17  md:px-5">
         <Link to="/">
-          <img src={Logo} alt="Logo" className="h-[7vw] object-contain" />
+          <img src={Logo} alt="Logo" className=" md:h-[4vw] lg:h-[7vw]  h-[7vw] object-contain" />
         </Link>
         
       <div>
@@ -68,9 +68,10 @@ const Menu = () => {
               btn="a'm i candidate?" 
               bgcolor="" 
               textcolor="black" 
-              padding="lg:py-3 py-1 lg:px-6 px-1 " 
+              fontSize="md:text-[1.1vw] lg:text-[1vw] text-[3.2vw]"
+              padding="lg:py-3 py-1 lg:px-6 px-1 md:px-5 md:py-2   " 
               border="border" 
-              fontSize="lg:text-none text-[3vw]"
+             
               hoverEffect={false}
               to="https://calendly.com/admin-klearmindclinics/30min?month=2025-07"
               
@@ -101,7 +102,7 @@ const Menu = () => {
         onDragEnd={(event, info) => {
           if (info.point.x > 100) setOpen(false);
         }}
-        className="fixed top-0 right-0 h-full w-full bg-white text-black flex flex-col items-center justify-center gap-4 translate-x-full cursor-grab active:cursor-grabbing"
+        className="fixed top-0 right-0 h-full w-full bg-white text-black flex flex-col items-center justify-center gap-4 md:gap-8 translate-x-full cursor-grab active:cursor-grabbing"
       >
         {[
           { name: "Ketamine therapy", path: "/Ketaminetherapy" },
@@ -114,16 +115,16 @@ const Menu = () => {
               <div
                 key={index}
                 ref={(el) => (linksRef.current[index] = el)}
-                className="flex flex-col items-center gap-2"
+                className="flex flex-col items-center gap-2 md:gap-4 md:text-4xl"
               >
                 {/* Pricing with dropdown icon */}
                 <div
                   onClick={() => setPriceDropdown(!priceDropdown)}
-                  className="text-3xl fontspring text-[#32140C] font-[550] cursor-pointer flex items-center gap-2"
+                  className="text-4xl md:text-5xl fontspring text-[#32140C] font-[550] cursor-pointer flex items-center gap-2"
                 >
                   {item.name}
                   {priceDropdown ? (
-                    <IoChevronUp className="text-2xl mt-1" />
+                    <IoChevronUp className="text-2xl  mt-1" />
                   ) : (
                     <IoChevronDown className="text-2xl mt-1" />
                   )}
@@ -139,14 +140,14 @@ const Menu = () => {
                   >
                     <Link
                       to="/Ketamineinfusion"
-                      className="fontspring text-xl text-[#32140C]  transition"
+                      className="fontspring text-xl  md:text-4xl text-[#32140C]  transition"
                     >
                       Ketamine infusion
 
                     </Link>
                     <Link
                       to="/Wellnesthraypy"
-                      className="fontspring text-xl text-[#32140C] transition"
+                      className="fontspring text-xl md:text-4xl text-[#32140C] transition"
                     >
                       Wellness Therapy
 
@@ -162,7 +163,7 @@ const Menu = () => {
               to={item.path}
               key={index}
               ref={(el) => (linksRef.current[index] = el)}
-              className="text-3xl fontspring text-[#32140C] font-[550] cursor-pointer opacity-0"
+              className="text-3xl md:text-5xl fontspring text-[#32140C] font-[550] cursor-pointer opacity-0"
             >
               {item.name}
             </Link>

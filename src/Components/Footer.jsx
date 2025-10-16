@@ -5,17 +5,17 @@ import riseup from "../assets/Video/riseup.mp4"
 import klearlogo from "../assets/images/klearlogo.svg"
 const Footer = () => {
   return (
-    <div className="h-full w-full bg-black lg:mt-70 mt-90 ">
-      <div className="front scdulecard lg:min-w-[57%] min-w-[90%]  bg-[#FDF9E9] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl -mt-23 grid lg:grid-cols-[60%_41%] overflow-hidden">
+    <div className="h-full w-full bg-black lg:mt-70 mt-99 md:mt-50 ">
+      <div className="front scdulecard lg:min-w-[57%] min-w-[90%] md:min-w-[75%]  bg-[#FDF9E9] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl -mt-23 grid lg:grid-cols-[60%_41%] md:grid-cols-[60%_41%] overflow-hidden">
         <div className="h-full  flex items-center justify-between flex-col">
           <div className="w-full  p-5 ">
             <div className="flex items-center gap-2 justify-start  pb-2">
               <span className="w-2 h-2 rounded-full bg-orange-500"></span>
-              <span className="figee text-[1.7vh] text-gray-600 tracking-wide">
+              <span className="figee lg:text-[1.7vh] md:text-[1.3vw] text-gray-600 tracking-wide">
                 Schedule a Consultation
               </span>
             </div>{" "}
-            <h2 className="fontspring text-[#32140C] text-3xl  lg:text-[3.4vw] lg:leading-none font-[500]">
+            <h2 className="fontspring text-[#32140C] text-3xl  lg:text-[3.4vw] md:text-4xl lg:leading-none font-[500]">
               We re here to listen, <br /> not just to treat
             </h2>
           </div>
@@ -23,7 +23,8 @@ const Footer = () => {
           <div className="flex flex-col sm:flex-row gap-2 mt-1">
           <Button
                 btn="book an appointment"
-                padding="py-2 px-7"
+                fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'
+                padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3" 
                 bgcolor="#FD8124"
                 textcolor="white"
                 border="border-none"
@@ -31,7 +32,8 @@ const Footer = () => {
               />
               <Button
                 btn="Am i a candidate"
-                padding="py-2 px-8"
+                 padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3   " 
+              fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'
                 hoverEffect={false}
                 textcolor="black"
                 border="border border-black"
@@ -41,28 +43,28 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-full  flex items-center justify-center">
-          <img src={rose} alt="" className="lg:h-[58vh]  h-[38vh] p-4 lg:p-6  object-cover  " />
+          <img src={rose} alt="" className="lg:h-[58vh] md:h-[30vh]   h-[38vh] p-4 lg:p-6  object-cover  " />
         </div>
       </div>
 
       <footer className="w-full bg-[#F8EEEC] lg:px-40">
         <div className=" w-full  grid grid-cols-1 ">
-          <div className="h-full  grid lg:grid-cols-2 grid-cols-1 lg:p-0 p-3  lg:mt-35 mt-55 ">
-          <div className="h-full flex flex-col items-center  lg:flex-row lg:items-start justify-start gap-4">
-          <div className="figee lg:text-[2vh] text-2xl  lg:gap-1 gap-2 flex lg:items-start items-center   flex-col text-[#563B35] ">
+          <div className="h-full  grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 lg:p-0 p-3 md:mt-30  lg:mt-35 mt-55 ">
+          <div className="h-full flex flex-col items-center md:flex-row md:items-start  lg:flex-row lg:items-start justify-start gap-4">
+          <div className="figee lg:text-[2vh] text-2xl md:text-[2.3vw]  lg:gap-1 gap-2 flex lg:items-start items-center    flex-col text-[#563B35] ">
                 <h2>Quick Links</h2>
                 <h4>Home</h4>
                 <h4>About us</h4>
                 <h4>Treatments</h4>
                 <h4>pricing</h4>
               </div>
-              <div className="figee lg:text-[2vh] text-2xl  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
+              <div className="figee lg:text-[2vh] text-2xl  md:text-[2.3vw]  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
                 <h2>Support</h2>
                 <h4>Blog</h4>
             
               </div>
 
-              <div className="figee lg:text-[2vh] text-2xl  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
+              <div className="figee lg:text-[2vh] text-2xl  md:text-[2.3vw]  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
               <h2>Treatments</h2>
 
                 <h4>Ketarmine therapy</h4>
@@ -70,8 +72,8 @@ const Footer = () => {
               </div>
               
               </div>
-              <div className="lg:h-full lg:w-full flex flex-col lg:flex-row lg:items-start justify-start items-center lg:gap-0 gap-6">
-              <div className="lg:w-2xl figee lg:text-[2vh] text-[6vw]  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
+              <div className="lg:h-full lg:w-full  md:items-start flex flex-col md:flex-row lg:flex-row lg:items-start justify-start items-center lg:gap-0 gap-6">
+              <div className="lg:w-2xl md:w-2xl figee lg:text-[2vh] text-[6vw] gap-1 flex lg:items-start items-center md:text-[1.7vw]  flex-col text-[#563B35] ">
                 <h2>Location</h2>
                 <h4>1249 Pleasant Grove Blvd <br />
                 #100, Roseville, CA 95678</h4>
@@ -79,7 +81,7 @@ const Footer = () => {
                 916-900-6686</h4>
               </div>
              
-              <div className="figee lg:text-[2vh] text-[5vw]  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
+              <div className="figee lg:text-[2vh] md:text-[1.6vw] text-[5vw] md:items-start  gap-1 flex lg:items-start items-center   flex-col text-[#563B35] ">
                 <h2>Open Payments Database
                 </h2>
                 <h4>For informational purposes only, a link to the federal Centers for Medicare and Medicaid Services (CMS) Open Payments web page is provided here.
@@ -91,8 +93,10 @@ const Footer = () => {
               </div>
          
               
-              </div>          </div>
-          <div className="lg:h-[64vh] h-[25vh]  w-full mt-10 bg-black lg:overflow-hidden" >
+              </div>        
+              
+                </div>
+          <div className="lg:h-[64vh] h-[25vh] md:h-[23vh]  w-full mt-10 bg-black lg:overflow-hidden" >
             <div className="relative h-full bg-blue-400 rounded-2xl">
                  <video src={riseup} autoPlay loop muted className="h-full w-full object-cover"></video>
 

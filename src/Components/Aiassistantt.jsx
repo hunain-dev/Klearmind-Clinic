@@ -50,7 +50,7 @@ You can also book an appointment directly here:
 >
       {/* Main Panel */}
       {open && !chatOpen && (
-        <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw]    w-[93vw]  bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
+        <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw] md:max-h-[71.8333vw] md:w-[61.6667vw]    w-[93vw]  bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
           <div className="flex justify-end items-start mb-3">
             <button
               className="text-gray-600 cursor-pointer hover:text-black text-3xl"
@@ -83,10 +83,10 @@ You can also book an appointment directly here:
               btn="Let's chat"
               bgcolor="#FD8124"
               textcolor="white"
-              padding="py-3 px-25"
+              padding="py-3 px-25 "
               border="border"
               hoverEffect={false}
-              fontSize="lg:text-[1.1vw] text-[4vw]"
+              fontSize="lg:text-[1.1vw] text-[4vw] md:text-2xl"
             />
           </div>
         </div>
@@ -94,7 +94,7 @@ You can also book an appointment directly here:
 
       {/* Chat Window */}
       {open && chatOpen && (
-        <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw]  h-[120vw] w-[93vw]  bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
+        <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw] md:max-h-[71.8333vw] md:w-[61.6667vw]    w-[93vw]  bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
 
         <div className="flex justify-between items-start mb-3">
 
@@ -168,7 +168,7 @@ You can also book an appointment directly here:
         <img
           src={ai}
           alt="AI Assistant"
-          className="lg:h-[9.4vh] lg:w-[9.4vh] h-[8vh] w-[8vh] rounded-full object-cover"
+          className="lg:h-[9.4vh] md:h-[10vw] md:w-[7vh] lg:w-[9.4vh] h-[8vh] w-[8vh] rounded-full object-cover"
         />
       </div>
     </div>

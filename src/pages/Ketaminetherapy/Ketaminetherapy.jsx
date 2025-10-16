@@ -14,11 +14,10 @@ import Loader from '../../Components/Loader'
 
 const Ketaminetherapy = () => {
   return (
-    <div className=' w-full  lg:py-33 py-20  '>
+    <div className=' w-full lg:py-33 py-20  '>
       <Loader/>
       <Ketamine heading="Treatment Overview" text="What is Ketamine?" paragh={<>
       Ketamine is an FDA-approved anesthetic medication that has been used safely  for <br /> decades in surgical and emergency settings. More recently, ketamine has emerged as a <br /> powerful treatment for depression, PTSD, anxiety, and other psychiatric conditions <br /> especially when traditional medications haven't worked.
-
         
         </>} 
         
@@ -28,7 +27,10 @@ const Ketaminetherapy = () => {
       <FormsofTreatment/>
       <Psychotherapy/>
       <Lifedeserve imageSrc={therapyImg} />
+      <div className='lg:mt-0 md:mt-20'>
       <Trustedcommuntiy/>
+
+      </div>
       <Faqs/>
       
     </div>

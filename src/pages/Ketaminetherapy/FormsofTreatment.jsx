@@ -29,23 +29,23 @@ const FormsofTreatment = () => {
     ]
   return (
     <div className='     w-full grid mt-20 grid-cols-1 lg:px-40'>
-        <div className='h-full grid lg:grid-cols-2 grid-cols-1
+        <div className='h-full grid lg:grid-cols-2 grid-cols-1 md:grid-cols-2
         '>
             <div className='h-full lg:p-0 p-2'>
             <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full bg-amber-700 "></span>
-            <span className="figee lg:text-[1.7vh] text-[3.3vw]  text-gray-600 tracking-wide">
+            <span className="figee lg:text-[1.7vh] md:text-[1.4vw] text-[3.3vw]  text-gray-600 tracking-wide">
             Award-Winning Care, Year After Year
             </span>
             </div>
-            <h2 className='figee lg:text-4xl text-[6.9vw] lg:mt-2 text-[#32140C]' >Forms of Treatment            </h2>
+            <h2 className='figee lg:text-4xl text-[6.9vw] lg:mt-2 md:text-[3.6vw] text-[#32140C]' >Forms of Treatment            </h2>
             </div>
             <div className='h-full lg:p-0 p-2  flex items-start lg:px-10 justify-start gap-4 flex-col'>
-                <h3 className='figee text-[#63605F] lg:text-sm text-[4.3vw]'>There are 4 methods to deliver Ketamine treatments.</h3>
+                <h3 className='figee text-[#63605F] lg:text-sm text-[4.3vw] md:text-[2.2vw]'>There are 4 methods to deliver Ketamine treatments.</h3>
                 <Button btn="Learn more" padding="lg:py-3 lg:px-8 py-2" hoverEffect={false} textcolor="black" border="border border-black"/>
             </div>
         </div>
-        <div className='lg:mt-7 mt-3 grid lg:grid-cols-4  grid-cols-2 gap-5 p-5'>
+        <div className='lg:mt-7 mt-3 grid lg:grid-cols-4  grid-cols-2 md:grid-cols-4 gap-5 p-5'>
             {
                 treatment.map((elem,index)=>{
                     return(
@@ -53,7 +53,7 @@ const FormsofTreatment = () => {
                         <div className='w-full ' style={{backgroundColor:elem.innercolor}}>
                             <img src={elem.innerimg} className='h-full  rounded-2xl  w-full object-cover' alt="" />
                         </div>
-                        <h3 className='figee lg:text-[1.5vw] text-[4vw] mt-2'>{elem.text}</h3>
+                        <h3 className='figee lg:text-[1.5vw]  md:text-[2.2vw] text-[4vw] mt-2'>{elem.text}</h3>
                     </div>
                     )
                 })
