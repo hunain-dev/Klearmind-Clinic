@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const PopularTreatments = () => {
   const obj = [
@@ -7,12 +8,18 @@ const PopularTreatments = () => {
         "https://cdn.prod.website-files.com/68235d19001da11fe701c90e/6870f3b9987d45a3477ef978_Frame%201410133546%20(1)-p-500.avif",
       text: "Ketamine IV Infusion",
       paragh: "Rapid relief for anxiety, depression, chronic pain, and PTSD.",
+      link: "/Ketaminetherapy", // 👈 add your route here
+
+
+
     },
     {
         image:
           "https://cdn.prod.website-files.com/68235d19001da11fe701c90e/6870f3b90b4a0fc895987957_Frame%201410133622-p-500.avif",
         text: "Wellness iv and injection",
         paragh: "Non-invasive brain stimulation for depression and anxiety treatment.",
+        link: "/Wellnesthraypy", // 👈 add your route here
+
       },
   ]
 
@@ -32,10 +39,17 @@ const PopularTreatments = () => {
           <div key={index} className="">
             {/* Left: Image */}
             <div className="overflow-hidden rounded-3xl">
-  <img
-    className="lg:h-[27vw] md:h-[35vw] w-full object-cover rounded-4xl transition-transform duration-700 ease-in-out hover:scale-110"
-    src={elem.image}
-    alt={elem.text}
+            <Link to={elem.link}>
+                  <img
+                    src={elem.image}
+                    alt={elem.text}
+                    className="lg:h-[27vw] md:h-[35vw] w-full object-cover rounded-4xl transition-transform duration-700 ease-in-out hover:scale-110"
+                  />
+                </Link>
+  
+  
+   <img
+
   />
 </div>
 

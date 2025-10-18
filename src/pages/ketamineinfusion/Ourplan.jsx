@@ -196,7 +196,7 @@ const Ourplan = () => {
           <Button
             btn="Schedule a consultation"
             padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3   " 
-            fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'            hoverEffect={false}
+            fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw] ' to="https://calendly.com/admin-klearmindclinics/30min"            hoverEffect={false}
           />
         </div>
       ))}

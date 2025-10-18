@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-const Lifedeserve = ({ videoSrc, imageSrc }) => {
+const Lifedeserve = ({ videoSrc, imageSrc,heading,paragh,classname }) => {
 
   
   return (
@@ -25,16 +25,16 @@ const Lifedeserve = ({ videoSrc, imageSrc }) => {
         )}
       </div>
 
-      <div className='h-full flex overflow-hidden items-center justify-between flex-col '>
-        <div className='w-full flex items-start justify-center text-center'>
-        <h3 className="fontspring text-[#32140C] text-[8vw] lg:text-[3.3vw] md:text-[4.3vw] leading-tight lg:leading-12">
-        Bloom into the life <br /> you deserve with <br /> Klearmind
+      <div className='h-full flex overflow-hidden items-center justify-between  flex-col '>
+        <div className='w-full flex items-center justify-between   '>
+        <h3 className={` text-[#32140C]  text-[8vw] md:text-[4.3vw] ${classname}`}>
+
+        {heading}
           </h3>
         </div>
         <div className='w-full py-1 text-center gap-8 flex items-center justify-center flex-col lg:px-9 px-0 '>
           <h3 className='figee lg:leading-6 lg:text-[1vw] md:text-[1.3vw] lg:mt-0 mt-2 text-[3.2vw] leading-7 text-center text-[#413f3f]'>
-            Safe, evidence-based Ketamine infusions for psychiatric disorders <br /> 
-            and chronic pain management
+            {paragh}
           </h3>
           <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3'>
             <Button 

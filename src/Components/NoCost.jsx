@@ -47,6 +47,7 @@ const NoCost = ({img,pretext,text}) => {
               fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'
               padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3"               border="border" 
               hoverEffect={true}
+              to="https://calendly.com/admin-klearmindclinics/30min?month=2025-07"
             />
         </div>
         <div className='h-ful '>

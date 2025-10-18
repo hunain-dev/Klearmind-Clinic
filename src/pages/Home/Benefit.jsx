@@ -29,6 +29,7 @@ const Benefit = () => {
               bgcolor=""
               textcolor="black"
               fontSize="lg:text-[1vw] md:text-[1.4vw] text-[3.2vw]"
+              to="/Veteransaffair"
 
               hoverEffect={false}
               border="border-black"

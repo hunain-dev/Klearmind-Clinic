@@ -53,7 +53,7 @@ const Faqs = () => {
               padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3"  bgcolor="#FD8124" textcolor="white"  border="border-none"/>
 
 
-            <Button btn="Learn more"     padding="lg:py-3 py-3 lg:px-6 px-11 md:px-8 md:py-2   " 
+            <Button btn="Learn more" to="/Blog"     padding="lg:py-3 py-3 lg:px-6 px-11 md:px-8 md:py-2   " 
               fontSize='md:text-[1.8vw] lg:text-[1vw] text-[3.2vw]' hoverEffect={false} textcolor="black" border="border border-black"/>
 
             </div>

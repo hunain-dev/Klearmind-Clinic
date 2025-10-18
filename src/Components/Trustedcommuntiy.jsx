@@ -27,7 +27,7 @@ const Trustedcommuntiy = () => {
               Award-Winning Care, Year After Year
             </span>
           </div>
-          <h2 className="fontspring text-[#361810] lg:text-4xl md:text-3xl md:leading-9 lg:leading-0 leading-10 text-[7.3vw]">
+          <h2 className="fontspring text-[#361810] lg:text-4xl md:text-3xl md:leading-9 lg:leading-10 leading-10 text-[7.3vw]">
             Trusted by the Sacramento community <br />
             ten years and counting
           </h2>

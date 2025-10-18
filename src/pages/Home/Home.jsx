@@ -22,7 +22,7 @@
       <Klearmind/>
         <Journey/>
         <Benefit/>
-        <Testimonial  img={testtonimals} />
+        <Testimonial  img={testtonimals}  />
         <Neuroplasticity/>
         <PopularTreatments/>
         <OurApproach/>

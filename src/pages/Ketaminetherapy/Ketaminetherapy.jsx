@@ -13,6 +13,8 @@ import fact from "../../assets/images/fact.png"
 import Loader from '../../Components/Loader'
 
 const Ketaminetherapy = () => {
+
+  
   return (
     <div className=' w-full lg:py-33 py-20  '>
       <Loader/>
@@ -25,8 +27,17 @@ const Ketaminetherapy = () => {
       <Therapy/>
       <Klearmind />
       <FormsofTreatment/>
-      <Psychotherapy/>
-      <Lifedeserve imageSrc={therapyImg} />
+      <Psychotherapy  herapy/>
+      <Lifedeserve imageSrc={therapyImg} classname="figee text-left px-10 lg:text-[2.3vw] leading-9 " heading={<>
+        Ketamine treatments may be  covered with a pre approved  referral through your VA <br /> benefit
+  </>} paragh={<>
+    KlearMind Clinics is led by a top-rated anesthesiologist in Sacramento and supported by a comprehensive medical team.We understand the unique pressures and responsibilities faced bymilitary service members, and we're here to provide personalized treatment tailored to your needs.
+
+
+
+  </>} 
+  
+  />
       <div className='lg:mt-0 md:mt-20'>
       <Trustedcommuntiy/>
 

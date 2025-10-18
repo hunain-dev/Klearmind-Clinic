@@ -31,7 +31,7 @@ const Psychotherapy = () => {
             <p className='figee text-[#433F3F] text-[3.7vw] lg:text-sm  md:text-[2vw] text-center'>When combined with talk therapy, ketamine can unlock <br />
             new insights and emotional clarity.</p>
             <div className='lg:mt-5 mt-3'>
-            <Button  btn="Learn more" padding=" py-3 px-9" hoverEffect={false}/>
+            <Button  btn="Learn more" padding=" py-3 px-9" to="/Lap" hoverEffect={false}/>
 
             </div>
         </div>
@@ -53,7 +53,7 @@ const Psychotherapy = () => {
       <Button  btn="Schedule A  consultation" to="https://calendly.com/klearmind/consultation-with-board-certified-physician?month=2025-08"    fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'
               padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3"  bgcolor="#FD8124" textcolor="white"/>
       <Button  btn="Oral Ketamine Prescription Renewal" to="https://checkout.square.site/merchant/MLTA69W3FWH1D/checkout/E7O4RL7HFUC4XTO7A2F6ACXV"   padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3   " 
-              fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]' hoverEffect={false}/>
+              fontSize='md:text-[1.4vw] lg:text-[1vw] text-[3.2vw]'  hoverEffect={false}/>
 
       </div>
       

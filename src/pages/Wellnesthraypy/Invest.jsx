@@ -35,7 +35,7 @@ const Invest = () => {
         <div className='h-full  flex items-center lg:justify-start  gap-4 flex-col'>
         <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[1.7vh] md:text-[1.8vw]  text-gray-600 tracking-wide">
+            <span className="figee text-[1.7vh] lg:text-[1.8vh] md:text-[1.8vw]  text-gray-600 tracking-wide">
             Affordable, Accessible Care
 
             </span>
@@ -76,7 +76,7 @@ const Invest = () => {
               bgcolor="#FD8124" 
               textcolor="white" 
               padding="lg:py-3 md:py-3 py-3" 
-              fontSize='lg:text-[2vw] md:text-[1.7vw]'
+              fontSize='lg:text-[1vw] md:text-[1.7vw]'
               border="border" 
               hoverEffect={true}
             />

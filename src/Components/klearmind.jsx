@@ -1,23 +1,29 @@
 import React from 'react'
 import Button from './Button'
 import flora from "../assets/images/flora.png"
+import { Link } from 'react-router-dom'
 const Klearmind = () => {
     const boxes = [
         {
+            id: 1,
             bgcolor:"white",
-            tittle:"OverWhelmed",
+            tittle:"OverWhelmed?",
             desc:"Anxiety PTSD - biposar Discorder"
         },
         {
-            bgcolor:"white",
-            tittle:"OverWhelmed",
+            id: 2,
 
-            desc:"Dipperession"
+            bgcolor:"white",
+            tittle:"Feeling hopeless?",
+
+            desc:"Dipperession low self esteem"
 
         },
         {
+            id: 3,
+
             bgcolor:"white",
-            tittle:"OverWhelmed",
+            tittle:"in constant pain?",
 
             desc:"Chronic pain"
 
@@ -38,10 +44,16 @@ const Klearmind = () => {
             {
                 boxes.map((elem,index)=>{
                     return(
-                        <div key={index} className='lg:h-[12vh] h-20 p-3' style={{backgroundColor:elem.bgcolor}}>
-                            <h3 className='figee lg:text-[1.1vw] text-[4vw] md:text-[2vw]'>{elem.tittle}</h3>
-                            <h2 className='text-[#A4A1A1] lg:text-[1.1vw] md:text-[2vw] text-[3.7vw]'>{elem.desc}</h2>
+                        <Link key={index} to={`/klearmind/${elem.id}`}>
+                        <div
+                          className="lg:h-[12vh] h-20 p-3 hover:scale-105 transition"
+                          style={{ backgroundColor: elem.bgcolor }}
+                        >
+                          <h3 className="figee lg:text-[1.1vw] text-[4vw] md:text-[2vw]">{elem.tittle}</h3>
+                          <h2 className="text-[#A4A1A1] lg:text-[1.1vw] md:text-[2vw] text-[3.7vw]">{elem.desc}</h2>
                         </div>
+                      </Link>
+                      
 
                     )
                 })
