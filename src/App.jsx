@@ -11,6 +11,7 @@ import Veteransaffair from "./Components/Veteransaffair";
 import Lap from "./pages/Ketaminetherapy/Lap";
 import Treatmentmodalities from "./pages/Ketaminetherapy/Treatmentmodalities";
 import Blog from "./pages/Blog/Blog";
+import BlogDetails from "./Components/BlogDetails";
 
 const App = () => {
     const scroll = new LocomotiveScroll();
@@ -30,7 +31,8 @@ return (
           <Route path="/Lap" element={<Lap />} />
           <Route path="/Treatmentmodalities" element={<Treatmentmodalities />} />
           <Route path="/Blog" element={<Blog />} />
-          
+          <Route path="/BlogDetails/:id" element={<BlogDetails />} />
+
 
         </Routes>
     </div>
