@@ -27,12 +27,12 @@ const PopularTreatments = () => {
     <div className="h-full lg:mt-30 mt-10 md:mt-20 w-full grid lg:grid-cols-1 ">
       {/* Heading */}
       <div className="h-full w-full flex items-center justify-start lg:gap-1 md:gap-2 flex-col">
-        <h3 className="figee lg:text-[2vh] text-[3.5vw] md:text-[2vw]">Our Most Requested Treatments</h3>
-        <h3 className="figee lg:text-[2.3vw] text-3xl md:text-[3.5vw] text-[#32140C]">Requested Treatments</h3>
+        <h3 className="figee lg:text-[2vh] text-[3vw] md:text-[2vw]">Our Most Requested Treatments</h3>
+        <h3 className="figee lg:text-[2.3vw] text-[6vw] md:text-[3.5vw] text-[#32140C]">Requested Treatments</h3>
       </div>
 
       {/* Treatments Grid */}
-      <div className="h-full w-full lg:px-40 px-9  lg:mt-9 mt-10 flex flex-col ">
+      <div className="h-full w-full lg:px-40 px-9  lg:mt-9 mt-6 flex flex-col ">
 
         <div className='grid lg:grid-cols-2 md:grid-cols-2 items-center gap-4'>
         {obj.map((elem, index) => (
@@ -56,7 +56,7 @@ const PopularTreatments = () => {
             {/* Right: Text/Paragraph */}
             <div className=" lg:px-6 md:px-10 text-center">
               <h2 className="figee lg:text-[1.8vw] md:text-[2.2vw] text-[5vw] py-3 text-[#413D3D]">{elem.text}</h2>
-              <h4 className="figee lg:text-[1vw] text-[#9E9C9B]">{elem.paragh}</h4>
+              <h4 className="figee lg:text-[1vw] text-[4vw] text-[#9E9C9B]">{elem.paragh}</h4>
             </div>
           </div>
         ))}

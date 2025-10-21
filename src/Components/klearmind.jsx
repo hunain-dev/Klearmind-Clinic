@@ -3,6 +3,7 @@ import Button from './Button'
 import flora from "../assets/images/flora.png"
 import { Link } from 'react-router-dom'
 const Klearmind = () => {
+  
     const boxes = [
         {
             id: 1,
@@ -34,19 +35,19 @@ const Klearmind = () => {
         <div className='h-full'>
         <div className='flex items-center gap-2 justify-start  lg:pb-0 pb-1'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[2vh] md:text-[2vw] text-[4vw]  text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] md:text-[2vw] text-[3vw]  text-gray-600 tracking-wide">
             What Is Klearmind?
             </span>
             </div>           
-             <h1 className='fontspring lg:text-[2.5vw] text-3xl md:text-[3vw]'>Is This Right for Me?</h1>
+             <h1 className='fontspring lg:text-[2.5vw] text-[7vw] md:text-[3vw]'>Is This Right for Me?</h1>
 
-            <div className='grid lg:grid-col-4 grid-cols-1 lg:gap-5 gap-3 mt-7 lg:pb-8 pb-10 '>
+            <div className='grid lg:grid-col-3 grid-cols-1 lg:gap-3 gap-3 lg:mt-7 mt-5 lg:pb-8 pb-6 '>
             {
                 boxes.map((elem,index)=>{
                     return(
                         <Link key={index} to={`/klearmind/${elem.id}`}>
                         <div
-                          className="lg:h-[12vh] h-20 p-3 hover:scale-105 transition"
+                          className="lg:h-[12vh] h-19 p-3 hover:scale-105 transition"
                           style={{ backgroundColor: elem.bgcolor }}
                         >
                           <h3 className="figee lg:text-[1.1vw] text-[4vw] md:text-[2vw]">{elem.tittle}</h3>

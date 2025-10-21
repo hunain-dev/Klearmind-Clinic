@@ -14,7 +14,7 @@ const Wellnesthraypy = () => {
     <div className='w-full lg:py-33 py-20  relative'>
 
       <Loader/>
-<Ketamine heading="Treatment Overview" text="What is Wellness Therapy?" paragh={<>
+<Ketamine heading="Treatment Overview" text="What is Wellness Therapy?"  paragh={<>
   Biological wellness is about helping you feel your best. Our IV hydration and therapy <br /> support mood, energy, and recovery-whether you're run down, dehydrated, or just<br /> need a boost. Each infusion is tailored to your unique needs.
 
         

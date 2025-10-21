@@ -37,7 +37,7 @@ const Trustedcommuntiy = () => {
         <div className="relative lg:mt-10 md:mt-10 flex items-center justify-center overflow-hidden">
           <div 
             ref={circleRef}
-            className="circle relative w-60 h-86 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
+            className="circle  relative w-20 lg:left-5 -mt-23 h-96 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
           >
             {[...Array(8)].map((_, i) => {
               const angle = (i / 8) * 360; // 8 positions evenly
@@ -45,14 +45,14 @@ const Trustedcommuntiy = () => {
               const x = radius * Math.cos((angle * Math.PI) / 180);
               const y = radius * Math.sin((angle * Math.PI) / 180);
 
-              const imgSrc = i % 2 === 0 ? flower : leaf;
+              const imgSrc = i % 2 === 0 ? flower  : leaf;
 
               return (
                 <img
                   key={i}
                   src={imgSrc}
                   alt="decor"
-                  className="w-16  absolute"
+                  className="lg:w-20 w-13  absolute"
                   style={{
                     left: `calc(50% + ${x}px)`,
                     top: `calc(50% + ${y}px)`,

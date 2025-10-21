@@ -291,26 +291,26 @@ const Blog = () => {
         
     ]
   return (
-    <div className=' w-full  lg:py-30'>
+    <div className=' w-full py-25  lg:py-30'>
         <div className=' w-full  flex items-center text-center justify-start flex-col'>
         <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[2vh] md:text-[3vw] text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] md:text-[3vw] text-[3.3vw] text-gray-600 tracking-wide">
             Blog
             </span>
             </div>
-            <h2 className='fontspring text-5xl text-[#32140C] mt-2'>KlearMind Blogs: Insights <br /> for Healing</h2>
-            <h5 className='figee text-sm mt-4'>Stay informed on the latest in ketamine therapy, mental health innovations, and self <br />-care guidance—all in one place.</h5>
+            <h2 className='fontspring lg:text-5xl text-3xl text-[#32140C] mt-2'>KlearMind Blogs: Insights <br /> for Healing</h2>
+            <h5 className='figee lg:text-sm text-[2.5vw] lg:mt-4 mt-3'>Stay informed on the latest in ketamine therapy, mental health innovations, and self <br />-care guidance—all in one place.</h5>
         </div>
 
-        <div className=' w-full mt-20 lg:px-40'> 
+        <div className=' w-full lg:mt-20 mt-10 lg:px-40'> 
 
             <div className='  w-full overflow-hidden '>
-               <div className=" flex items-start justify-start gap-4 w-full ">
+               <div className=" flex items-start justify-start lg:ap-4 w-full ">
                <Button 
               btn="All" 
-              padding="lg:py-1 py-3 lg:px-8 px-11 md:px-5 md:py-3   " 
-              fontSize='md:text-[1.4vw] lg:text-[1.1vw] text-[3.2vw]'
+              padding="lg:py-1 py-3 lg:px-8 px-5 md:px-5 md:py-3   " 
+              fontSize='md:text-[1.4vw] lg:text-[1.1vw] text-[4vw]'
 
               border="border-none" 
               hoverEffect={false}
@@ -321,8 +321,8 @@ const Blog = () => {
 
 <Button 
               btn="Wellness" 
-              padding="lg:py-1 py-3 lg:px-8 px-11 md:px-5 md:py-3   " 
-              fontSize='md:text-[1.4vw] lg:text-[1.1vw] text-[3.2vw]'
+            padding="lg:py-1 py-3 lg:px-8 px-5 md:px-5 md:py-3   " 
+              fontSize='md:text-[1.4vw] lg:text-[1.1vw] text-[4vw]'
 
               border="border-none" 
               hoverEffect={false}
@@ -333,8 +333,8 @@ const Blog = () => {
             />
                    <Button 
               btn="Ketamine" 
-              padding="lg:py-1 py-3 lg:px-8 px-11 md:px-5 md:py-3   " 
-              fontSize='md:text-[1.4vw] lg:text-[1.1vw] text-[3.2vw]'
+       padding="lg:py-1 py-3 lg:px-8 px-5 md:px-5 md:py-3   " 
+              fontSize='md:text-[1.4vw] lg:text-[1.1vw] text-[4vw]'
 
               border="border-none" 
               hoverEffect={false}
@@ -344,19 +344,19 @@ const Blog = () => {
               
             />
                 </div> 
-                <div className=' grid grid-cols-[58%_43%]   mt-5 overflow-hidden rounded-4xl bg-[#FDF9E9]'>
+                <div className=' grid lg:grid-cols-[58%_43%] grid-cols-1 lg:px-0 px-4   mt-5 overflow-hidden lg:rounded-4xl bg-[#FDF9E9]'>
   <div className='h-full '>
-    <img src="https://cdn.prod.website-files.com/68235d19001da11fe701c90e/6846c389a78f3e9225c3f512_Frame%201410133881.avif" className='h-105 rounded-2xl w-full object-cover' alt="" />
+    <img src="https://cdn.prod.website-files.com/68235d19001da11fe701c90e/6846c389a78f3e9225c3f512_Frame%201410133881.avif" className='lg:h-105 h-60  rounded-2xl w-full object-cover' alt="" />
   </div>
-  <div className='h-full  lg:px-3 lg:py-4  flex items-start flex-col justify-between'>
-    <h4 className='figee text-[#423D39]'>This is some text inside of a div block</h4>
+  <div className='h-full  lg:px-3 lg:py-4 lg:mt-0 mt-1  flex items-start flex-col justify-between'>
+    <h4 className='figee text-[#423D39] lg:text-2xl text-[3.5vw]'>This is some text inside of a div block</h4>
     <div className='flex  w-full lg:gap-4 gap-3 items-start justify-start'>
-    <h3 className='figee bg-[#FFE7B1] text-[#423D39] text-[0.8vw]  rounded-3xl p-3'>
+    <h3 className='figee bg-[#FFE7B1] text-[#423D39] lg:text-[0.8vw] text-[2.3vw] p-2  rounded-3xl lg:p-3'>
     this is some text inside of div <br /> block
   </h3>
 
-  <h3 className='figee bg-[#FFE7B1] text-[#423D39] text-[0.8vw]  rounded-3xl p-3'>
-    this is another text inside of div <br />     block
+  <h3 className='figee bg-[#FFE7B1] text-[#423D39] lg:text-[0.8vw] text-[2.3vw] p-2  rounded-3xl lg:p-3'>
+  this is another text inside of div <br />     block
   </h3>
 </div>
 
@@ -367,7 +367,7 @@ const Blog = () => {
             </div>
         </div>
 
-        <div className=' grid grid-cols-3 w-full mt-5 gap-6 lg:px-40'>
+        <div className=' grid lg:grid-cols-3  w-full mt-5 gap-6 px-3 lg:px-40'>
 
             {
                 cards.map((elem,index)=>{
@@ -383,17 +383,17 @@ const Blog = () => {
                         </div>
                   
                         {/* Content */}
-                        <div className="p-5 flex items-start gap-10 justify-between flex-col">
-                          <h3 className="text-[#2E2E2E] text-sm figee  mb-4">
+                        <div className="p-5 flex items-start lg:gap-10 gap-4 justify-between flex-col">
+                          <h3 className="text-[#2E2E2E] lg:text-sm text-[4vw] figee  mb-4">
                            {elem.text}
                           </h3>
                   
                           {/* Date + Tag */}
                           <div className="flex items-center gap-3">
-                            <span className="figee text-sm bg-[#FCE9C2] px-3 py-1 rounded-full text-[#4B4B4B]">
+                            <span className="figee lg:text-sm text-[4vw] bg-[#FCE9C2] px-3 py-1 rounded-full text-[#4B4B4B]">
                               {elem.date}
                             </span>
-                            <span className="text-sm bg-[#FCE9C2] px-3 py-1 rounded-full text-[#4B4B4B]">
+                            <span className="lg:text-sm text-[4vw] bg-[#FCE9C2] px-3 py-1 rounded-full text-[#4B4B4B]">
                               {elem.things}
                             </span>
                           </div>

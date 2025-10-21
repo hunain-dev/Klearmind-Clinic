@@ -31,13 +31,13 @@ const StartGuide = () => {
 
             </span>
             </div>
-            <h2 className='figee lg:text-4xl text-[6.9vw] lg:mt-2 md:text-[3.6vw] text-[#32140C]' >
+            <h2 className='figee lg:text-4xl text-[6.4vw] lg:mt-2 md:text-[3.6vw] text-[#32140C]' >
             Steps to Get Started
             </h2>
             </div>
            
         </div>
-        <div className='lg:mt-7 mt-3 grid lg:grid-cols-3  grid-cols-2 md:grid-cols-4 gap-5 p-5'>
+        <div className='lg:mt-7 mt-3 grid lg:grid-cols-3  grid-cols-1 md:grid-cols-4 gap-5 p-5'>
             {
                 treatment.map((elem,index)=>{
                     return(

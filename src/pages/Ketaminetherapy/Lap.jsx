@@ -12,7 +12,7 @@ import Faqs from '../../Components/Faqs'
 
 const Lap = () => {
   return (
-    <div className=' w-full lg:py-33'>
+    <div className=' w-full lg:py-33 py-30'>
           <Ketamine heading="Treatment Overview" text={<>
             What Is Ketamine Assisted <br /> Psychotherapy
             </>}

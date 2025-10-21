@@ -60,7 +60,7 @@ You can also book an appointment directly here:
       {open && !chatOpen && (
         <div className="lg:w-[26.6667vw] lg:max-h-[34.8333vw] md:max-h-[71.8333vw] md:w-[61.6667vw] w-[93vw] bg-gradient-to-b from-orange-100 to-white rounded-2xl shadow-2xl p-4 mb-4 transition-all duration-500">
           <div className="flex justify-end mb-3">
-            <button
+            <button 
               className="text-gray-600 cursor-pointer hover:text-black text-3xl"
               onClick={() => setOpen(false)}
             >
@@ -109,8 +109,8 @@ You can also book an appointment directly here:
         className="text-gray-600 cursor-pointer hover:text-black text-2xl"
         onClick={() => setChatOpen(false)}
       >
-        <RiArrowGoBackFill />
-      </button>
+        <RiArrowGoBackFill  />
+      </button >
       <button
         className="text-gray-600 cursor-pointer hover:text-black text-2xl"
         onClick={() => setOpen(false)}
@@ -126,6 +126,7 @@ You can also book an appointment directly here:
       className="bg-gray-100 rounded-xl p-3 shadow-inner flex-1 overflow-y-auto scrollbar-thin scrollbar-thumb-orange-400 scrollbar-track-gray-200"
     >
       {messages.map((msg, i) => (
+        
         <div
           key={i}
           className={`mb-2 ${

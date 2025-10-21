@@ -3940,21 +3940,21 @@ const BlogDetails = () => {
   }
 
   return (
-    <div className="h-full w-full py-33 px-60">
+    <div className="h-full w-full lg:py-33 py-30 lg:px-60 px-2">
 
       <div className=" w-full ">
         <div className=" flex items-center flex-col  justify-center w-full ">
         <div className='flex items-center gap-2 justify-center'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee lg:text-[2vh] md:text-[3vw] text-gray-600 tracking-wide">
+            <span className="figee lg:text-[2vh] md:text-[3vw] text-[3vw] text-gray-600 tracking-wide">
               {blog.date}
             </span>
             </div>
-    <h1 className="fontspring  text-[#32140C] mt-3 text-center text-5xl  mb-3">{blog.text}</h1>
+    <h1 className="fontspring  text-[#32140C] mt-3 text-center lg:text-5xl  text-4xl  mb-3">{blog.text}</h1>
 
         </div>
-        <div className="mt-6 rounded-2xl overflow-hidden w-full bg-red-400">
-      <img src={blog.img} alt={blog.text} className="h-123 w-full object-cover" />
+        <div className="mt-6 lg:rounded-2xl overflow-hidden w-full bg-red-400">
+      <img src={blog.img} alt={blog.text} className="lg:h-123 w-full object-cover" />
         </div>
 
         <div className="figee w-full mt-9 px-11">
@@ -3990,15 +3990,15 @@ const BlogDetails = () => {
           )}
         </div>
         <div  className=" px-13 w-full rounded-3xl overflow-hidden">
-        <img src={blog.halfimg} alt={blog.text} className="h-109 w-full object-cover" />
+        <img src={blog.halfimg} alt={blog.text} className="lg:h-109 w-full h-full object-cover" />
 
         </div>
 
-        <div className="figee w-full mt-9 px-11">
+        <div className="figee w-full mt-9 lg:px-11">
           {blog.lowercontent ? (
             blog.lowercontent.map((section, i) => (
               <div key={i} className="mb-10">
-                <h2 className="figee text-[2vw] text-[#474343]">
+                <h2 className="figee lg:text-[2vw] text-3xl text-[#474343]">
                   {section.heading}
                 </h2>
                 <div className="mt-3 text-[#6b6b6d] leading-relaxed space-y-4">

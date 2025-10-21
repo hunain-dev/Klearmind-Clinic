@@ -38,13 +38,17 @@ const Ketamineinfusion = () => {
 <Loader/>
         <KetamineinfusionLanding/>
         <Ourplan/>
+        <div className='lg:px-0 px-2'> 
         <NoCost  img={fruit} pretext="Treatment Overview" text={<>
             Wellness <br /> Therapy
 
             </>}/>
+        </div>
+    
 
             
-            <div className='lg:mt-20'>
+            <div className='lg:mt-20 lg:pb-0 pb-20'>
+
             <ImpactinNumbers
       title="Impact in Numbers"
       subtitle={

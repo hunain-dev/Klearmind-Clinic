@@ -1,13 +1,71 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from './Button'
 
 const Lifedeserve = ({ videoSrc, imageSrc,heading,paragh,classname }) => {
+  const [isLoading, setIsLoading] = useState(true)
 
-  
+  useEffect(() => {
+    // Hide loader after 1.5 seconds
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+    }, 1500)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     // GSAP animations sequence
+  //     const tl = gsap.timeline()
+      
+  //     // Set initial states
+  //     gsap.set('.video-container', { opacity: 0, y: 50 })
+  //     gsap.set('.heading-text', { opacity: 0, y: 30 })
+  //     gsap.set('.paragraph-text', { opacity: 0, y: 30 })
+  //     gsap.set('.buttons-container', { opacity: 0, y: 30 })
+
+  //     // Animate in sequence with very fast timing
+  //     tl.to('.video-container', { 
+  //       opacity: 1, 
+  //       y: 0, 
+  //       duration: 2.3, 
+  //       ease: "power2.out" 
+  //     })
+  //     .to('.heading-text', { 
+  //       opacity: 1, 
+  //       y: 0, 
+  //       duration: 1.3, 
+  //       ease: "power2.out" 
+  //     }, "-=0.1")
+  //     .to('.paragraph-text', { 
+  //       opacity: 1, 
+  //       y: 0, 
+  //       duration: 1.3, 
+  //       ease: "power2.out" 
+  //     }, "-=0.1")
+  //     .to('.buttons-container', { 
+  //       opacity: 1, 
+  //       y: 0, 
+  //       duration: 0.2, 
+  //       ease: "power2.out" 
+  //     }, "-=0.1")
+  //   }
+  // }, [isLoading])
+
+  if (isLoading) {
+    return (
+      <div className="h-full w-full flex items-center justify-center">
+        <div className="loader">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#FD8124]"></div>
+        </div>
+      </div>
+    )
+  }
+
   return (
 <div className="h-full w-full grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 px-0 lg:px-40">
 {/* LEFT SIDE */}
-      <div className='h-full overflow-hidden lg:p-3 md:p-4'>
+      <div className='video-container h-full overflow-hidden lg:p-3 md:p-4'>
         {videoSrc ? (
           <video
             src={videoSrc}
@@ -27,16 +85,16 @@ const Lifedeserve = ({ videoSrc, imageSrc,heading,paragh,classname }) => {
 
       <div className='h-full flex overflow-hidden items-center justify-between  flex-col '>
         <div className='w-full flex items-center justify-between   '>
-        <h3 className={` text-[#32140C]  text-[8vw] md:text-[4.3vw] ${classname}`}>
+        <h3 className={`heading-text text-[#32140C] lg:leading-12  md:text-[4.3vw] ${classname}`}>
 
         {heading}
           </h3>
         </div>
-        <div className='w-full py-1 text-center gap-8 flex items-center justify-center flex-col lg:px-9 px-0 '>
-          <h3 className='figee lg:leading-6 lg:text-[1vw] md:text-[1.3vw] lg:mt-0 mt-2 text-[3.2vw] leading-7 text-center text-[#413f3f]'>
+        <div className='w-full py-1 text-center lg:gap-8 gap-8 flex items-center justify-center flex-col lg:px-9 px-0 '>
+          <h3 className='paragraph-text figee lg:leading-6  lg:text-[1vw] md:text-[1.3vw] lg:mt-0 mt-2 text-[3.2vw]  text-center text-[#413f3f]'>
             {paragh}
           </h3>
-          <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3'>
+          <div className='buttons-container grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-3'>
             <Button 
               btn="Book an appointment" 
               bgcolor="#FD8124" 
@@ -55,7 +113,7 @@ const Lifedeserve = ({ videoSrc, imageSrc,heading,paragh,classname }) => {
 
               border="border-gray-700" 
               hoverEffect={false}
-              to=""
+              to="https://calendly.com/admin-klearmindclinics/30min?month=2025-07"
               
             />
 

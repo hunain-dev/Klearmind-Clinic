@@ -35,12 +35,12 @@ const Invest = () => {
         <div className='h-full  flex items-center lg:justify-start  gap-4 flex-col'>
         <div className='flex items-center gap-2 justify-start'>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
-            <span className="figee text-[1.7vh] lg:text-[1.8vh] md:text-[1.8vw]  text-gray-600 tracking-wide">
+            <span className="figee text-[1.5vh] lg:text-[1.8vh] md:text-[1.8vw]  text-gray-600 tracking-wide">
             Affordable, Accessible Care
 
             </span>
             </div>
-            <h2 className='fontspring lg:text-5xl text-4xl md:text-[4.3vw] text-[#32140C]'>Invest in Feeling Better
+            <h2 className='fontspring lg:text-5xl text-3xl md:text-[4.3vw] text-[#32140C]'>Invest in Feeling Better
             </h2>
         </div>
         <div className=' lg:mt-15 mt-9  grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 rounded-3xl overflow-hidden'>
@@ -54,7 +54,7 @@ const Invest = () => {
 
             </span>
             </div>
-    <h1 className='figee lg:text-4xl text-3xl  md:text-[3.3vw]   text-[#32140C]'>Wellness Injections</h1>
+    <h1 className='figee lg:text-4xl text-2xl  md:text-[3.3vw]   text-[#32140C]'>Wellness Injections</h1>
 
 
 
@@ -63,7 +63,7 @@ const Invest = () => {
     investamout.map((elem,index)=>{
         return(
             <div key={index} className='figee flex justify-between border-b border-gray-300 pb-2'>
-            <p>{elem.text}<br/><span className='text-gray-500 lg:text-sm text-[5.3vw]  md:text-[1.8vw]'>{elem.paragh}</span></p>
+            <p>{elem.text}<br/><span className='text-gray-500 lg:text-sm text-[4vw]  md:text-[1.8vw]'>{elem.paragh}</span></p>
             <p className='figee lg:text-2xl text-[5.1vw] md:text-[3vw]'>{elem.amount}</p>
            
           </div>
@@ -76,7 +76,7 @@ const Invest = () => {
               bgcolor="#FD8124" 
               textcolor="white" 
               padding="lg:py-3 md:py-3 py-3" 
-              fontSize='lg:text-[1vw] md:text-[1.7vw]'
+              fontSize='lg:text-[1vw] md:text-[1.7vw] text-[3vw]'
               border="border" 
               hoverEffect={true}
             />

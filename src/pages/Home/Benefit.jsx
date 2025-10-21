@@ -4,8 +4,9 @@ import VA from "../../assets/images/VA.png";
 const Benefit = () => {
   return (
     <div className=" w-full m-auto lg:mt-23 mt-9 p-10 lg:px-38 px-3">
-      <div className="h-full  rounded-3xl grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 overflow-hidden bg-[#F8EEEC] m-auto">
+      <div className="h-full  rounded-3xl grid lg:grid-cols-[62%_40%] md:grid-cols-2 grid-cols-1 overflow-hidden bg-[#F8EEEC] m-auto">
         <div className="h-full px-7 py-7">
+          
           <h3 className="figee lg:text-[1.9vh] md:text-[1.8vw]  text-[3.3vw] lg:mb-5 mb-1">
             Benefit for Veterans Affairs
           </h3>
@@ -37,8 +38,8 @@ const Benefit = () => {
             />
           </div>
         </div>
-        <div className="h-full lg:px-9 px-9 md:px-0  lg:py-0 py-3  flex items-center justify-end">
-          <img src={VA} alt="" className="lg:h-[5vw] md:h-[9vw] h-full w-full lg:p-0   object-contain" />
+        <div className="h-full lg:px-1 px-9 md:px-0  lg:py-0 py-2  flex items-center justify-end">
+          <img src={VA} alt="" className="lg:h-[5.3vw] md:h-[9vw] h-[14vw] w-full lg:p-0   object-contain" />
         </div>
       </div>
     </div>
