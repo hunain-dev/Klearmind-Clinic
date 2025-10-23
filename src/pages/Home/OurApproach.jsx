@@ -19,7 +19,7 @@ const OurApproach = () => {
                 <h3 className='figee lg:text-[1vw] text-[3.7vw] md:text-[1.5vw] lg:leading-6'>Discover how ketamine therapy works at Kleamind - <br /> it's already within you, waiting to bloom.
 
 </h3>
-<Button btn="Watch the explainer video" padding="lg:py-3 lg:px-5 py-3 md:py-3 md:px-5" fontSize='lg:text-[2vh] md:text-[1.1vh]' hoverEffect={false}/>
+<Button btn="Watch the explainer video" padding="lg:py-3 lg:px-5 py-3 md:py-3 md:px-5" fontSize='lg:text-[2vh] md:text-[1.1vh] text-[1.5vh]' hoverEffect={false}/>
             </div>
         </div>
       </div>

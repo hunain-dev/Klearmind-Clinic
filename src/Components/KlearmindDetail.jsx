@@ -356,7 +356,7 @@ const KlearmindDetail = () => {
 
                   "Contact us today at (916) 900-6686 or online to set up a consultation. We are here to help."
           ],
-        },p
+        },
       ],
     },
   ];
@@ -368,12 +368,13 @@ const KlearmindDetail = () => {
     return <h1 className="text-center text-2xl mt-20">Data not found 😢</h1>;
 
   return (
-    <div className="w-full lg:py-33 py-25 lg:px-21">
-      <Ketamine
-        heading="July 15, 2024"
-        text={current.title}
-        image={current.image}
-      />
+    <div className="w-full lg:py-33 py-25 lg:px-21 md:px-21 ">
+ <Ketamine
+  heading="July 15, 2024"
+  text={current.title}
+  image={current.image}
+  customClass="text-[5vw] lg:text-4xl md:text-4xl"
+/>
 
       <div className="lg:px-50 px-6 lg:py-13 py-10 w-full">
         <h4 className="figee lg:text-[1vw] pb-3 text-[#6b6b6d]">
@@ -389,7 +390,7 @@ const KlearmindDetail = () => {
           {content.content ? (
             content.content.map((section, i) => (
               <div key={i} className="mb-10">
-                <h2 className="figee lg:text-[2vw] text-[4.4vw] text-[#474343]">
+                <h2 className="figee lg:text-[2vw] md:text-[2vw] text-[4.4vw] text-[#474343]">
                   {section.heading}
                 </h2>
                 <div className="mt-3 text-[#6b6b6d] leading-relaxed space-y-4">

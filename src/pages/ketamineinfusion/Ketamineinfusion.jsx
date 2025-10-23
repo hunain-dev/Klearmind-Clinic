@@ -34,7 +34,7 @@ const Ketamineinfusion = () => {
   ];
 
   return (
-    <div className='w-full lg:py-34 md:py-34  py-20 lg:px-40'>
+    <div className='w-full lg:py-34 md:py-34  py-20 lg:px-40 px-3'>
 <Loader/>
         <KetamineinfusionLanding/>
         <Ourplan/>

@@ -8,21 +8,21 @@ const cards = [
     img: oldman1,
     title: "Resistance to Resilience: A Veteran’s Renewal with Ketamine",
     btnText: "Read the VA Article",
-    to: "/va-article",
+    to: "/https://marketplace.va.gov/innovations/from-resistance-to-resilience-a-veteran-s-renewal-with-ketamine",
 
   },
   {
     img: oldman2,
     title: "Eligibility Criteria for VA Covered Ketamine Treatment",
     btnText: "Download PDF",
-    to: "/va-covered-treatment",
+    to: "/https://marketplace.va.gov/innovations/from-resistance-to-resilience-a-veteran-s-renewal-with-ketamine",
 
   },
   {
     img: oldman3,
     title: "VA Clinical Guidance on Ketamine for Neuropathic Pain",
     btnText: "Download PDF",
-    to: "/va-neuropathic-pain",
+    to: "/https://marketplace.va.gov/innovations/from-resistance-to-resilience-a-veteran-s-renewal-with-ketamine",
 
   },
 ];
@@ -30,7 +30,7 @@ const cards = [
 const VeteransResources = () => {
   return (
     <div className="w-full  lg:py-16 px-6 lg:px-40">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -42,7 +42,7 @@ const VeteransResources = () => {
               className="w-full lg:h-61 object-cover rounded-2xl"
             />
             <div className="p-2 flex  flex-col justify-between ">
-              <h3 className="figee lg:mb-2 text-[#2B2A2A]  lg:text-[1.1vw] text-[4vw]">
+              <h3 className="figee lg:mb-2 text-[#2B2A2A]  lg:text-[1.1vw] md:text-[1.3vw]  text-[4vw]">
                 {card.title}
               </h3>
               <div className="w-fit mt-4">

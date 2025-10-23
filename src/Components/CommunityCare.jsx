@@ -35,7 +35,7 @@ Community Care
         <div className="relative lg:mt-10 md:mt-10 flex items-center justify-center overflow-hidden">
           <div 
             ref={circleRef}
-            className="circle relative w-20 lg:left-63 -mt-40 h-96 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
+            className="circle relative w-20 lg:left-63 md:left-43 -mt-40 h-96 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
           >
             {[...Array(8)].map((_, i) => {
               const angle = (i / 8) * 360; // 8 positions evenly

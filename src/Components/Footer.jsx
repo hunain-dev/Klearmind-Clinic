@@ -6,7 +6,7 @@ import klearlogo from "../assets/images/klearlogo.svg"
 const Footer = () => {
   return (
     <div className="h-full w-full bg-black lg:mt-70 mt-55 md:mt-50 ">
-      <div className="front scdulecard lg:min-w-[57%] min-w-[90%] md:min-w-[75%]  bg-[#FDF9E9] absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl -mt-23 grid lg:grid-cols-[60%_41%] md:grid-cols-[60%_41%] overflow-hidden">
+      <div className="front scdulecard lg:min-w-[57%] min-w-[90%] md:min-w-[75%]  bg-[#FDF9E9]  absolute left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-3xl -mt-23 grid lg:grid-cols-[60%_41%] md:grid-cols-[60%_41%] overflow-hidden">
         <div className="h-full  flex items-center justify-between flex-col">
           <div className="w-full  p-5 ">
             <div className="flex items-center gap-2 justify-start  pb-2">
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-full  flex items-center justify-center">
-          <img src={rose} alt="" className="lg:h-[58vh] md:h-[30vh]   h-[38vh] p-4 lg:p-6  object-cover  " />
+          <img src={rose} alt="" className="lg:h-[58vh] md:h-[30vh] xl:h-[52vh]   h-[38vh] p-4 lg:p-6  object-cover  " />
         </div>
       </div>
 
@@ -97,7 +97,7 @@ const Footer = () => {
               
                 </div>
           <div className="lg:h-[64vh] h-[25vh] md:h-[23vh]  w-full lg:mt-10 mt-25 bg-black lg:overflow-hidden" >
-            <div className="relative h-full bg-blue-400 rounded-2xl">
+            <div className="relative h-full  rounded-2xl">
                  <video src={riseup} autoPlay loop muted className="h-full w-full object-cover"></video>
 
               <div className="absolute top-0 left-0 h-full flex items-end justify-end w-full rounded-2xl ">

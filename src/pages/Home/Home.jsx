@@ -17,7 +17,7 @@
     return (
       <div  >
         <Loader/>
-        <HomeLanding   />
+        <HomeLanding    />
         <Therapydelivered/>
       <Klearmind/>
         <Journey/>

@@ -60,7 +60,7 @@ const Menu = () => {
 
       <div className="py-4 lg:px-2 flex lg:items-center  lg:gap-12 md:gap-115 gap-14  md:px-5">
         <Link to="/">
-          <img src={Logo} alt="Logo" className=" md:h-[4vw] lg:h-[7vw]  h-[6.3vw] object-contain" />
+          <img src={Logo} alt="Logo" className="md:h-[4vw] px-1 lg:h-[7vw]  h-[6.3vw] object-contain" />
         </Link>
         
       <div>
@@ -120,7 +120,7 @@ const Menu = () => {
                 {/* Pricing with dropdown icon */}
                 <div
                   onClick={() => setPriceDropdown(!priceDropdown)}
-                  className="text-4xl md:text-5xl fontspring text-[#32140C] font-[550] cursor-pointer flex items-center gap-2"
+                  className="text-3xl md:text-5xl fontspring text-[#32140C] font-[550] cursor-pointer flex items-center gap-2"
                 >
                   {item.name}
                   {priceDropdown ? (

@@ -40,7 +40,8 @@ const Veteransaffair = () => {
   return (
     <div className=" w-full lg:py-33 py-24 ">
       <Ketamine
-      
+        customClass="text-[5vw] lg:text-4xl md:text-3xl"
+
         heading="Veterans"
         text={
           <>
@@ -61,7 +62,7 @@ const Veteransaffair = () => {
       <div className="lg:mt-30 mt-20 lg:px-0 px-4">
         <Lifedeserve
           imageSrc={therapyImg}
-          classname="lg:px-8 lg:mt-0 mt-3  lg:text-4xl"
+          classname="lg:px-8 lg:mt-0 mt-3 text-3xl  lg:text-4xl"
           heading={<>Is This Right for Me?</>}
           paragh={
             <>

@@ -12,6 +12,7 @@ import Lap from "./pages/Ketaminetherapy/Lap";
 import Treatmentmodalities from "./pages/Ketaminetherapy/Treatmentmodalities";
 import Blog from "./pages/Blog/Blog";
 import BlogDetails from "./Components/BlogDetails";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
     const scroll = new LocomotiveScroll();
@@ -32,6 +33,7 @@ return (
           <Route path="/Treatmentmodalities" element={<Treatmentmodalities />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/BlogDetails/:id" element={<BlogDetails />} />
+          <Route path="*" element={<NotFound />} />
 
 
         </Routes>

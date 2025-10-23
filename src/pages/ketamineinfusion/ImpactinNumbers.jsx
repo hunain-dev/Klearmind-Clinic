@@ -11,7 +11,7 @@ const ImpactinNumbers = ({ title, subtitle, data, dotColor = "bg-orange-500" }) 
             {title}
           </span>
         </div>
-        <h2 className='figee text-center lg:text-4xl md:text-3xl text-3xl mt-2 text-[#32140C] font-[400]'>
+        <h2 className='figee text-center lg:text-4xl md:text-3xl text-2xl mt-2 text-[#32140C] font-[400]'>
           {subtitle}
         </h2>
       </div>
@@ -26,7 +26,7 @@ const ImpactinNumbers = ({ title, subtitle, data, dotColor = "bg-orange-500" }) 
             <h2 className='fontspringpeachi lg:text-5xl text-4xl text-[#FD862D]'>
               {item.number}
             </h2>
-            <h3 className='figee text-[#676362] lg:text-sm text-[4.3vw]'>
+            <h3 className='figee text-[#676362] md:text-[1.3vw]  lg:text-sm text-[4.3vw]'>
               {item.text}
             </h3>
           </div>

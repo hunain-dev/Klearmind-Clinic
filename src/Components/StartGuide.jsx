@@ -37,15 +37,15 @@ const StartGuide = () => {
             </div>
            
         </div>
-        <div className='lg:mt-7 mt-3 grid lg:grid-cols-3  grid-cols-1 md:grid-cols-4 gap-5 p-5'>
+        <div className='lg:mt-7 mt-3 grid lg:grid-cols-3  grid-cols-1 md:grid-cols-3 gap-5 p-5'>
             {
                 treatment.map((elem,index)=>{
                     return(
                         <div key={index} className='g-full overflow-hidden ' style={{backgroundColor:elem.bgcolor}} >
                         <div className='w-full ' style={{backgroundColor:elem.innercolor}}>
-                            <img src={elem.innerimg} className='h-[30vh]  rounded-2xl  w-full object-cover' alt="" />
+                            <img src={elem.innerimg} className='lg:h-[30vh]  rounded-2xl  w-full object-cover' alt="" />
                         </div>
-                        <h6 className='figee lg:text-[1vw] lg:mt-5 text-[#6d6c6b]  md:text-[2.2vw] text-[4vw] mt-2'>{elem.paragh}</h6>
+                        <h6 className='figee lg:text-[1vw] lg:mt-5 text-[#6d6c6b]  md:text-[1.5vw] text-[4vw] mt-2'>{elem.paragh}</h6>
                     </div>
                     )
                 })

@@ -232,7 +232,7 @@ const   IVInfusions = () => {
                   bgcolor="#FD8124" 
                   textcolor="white" 
                   padding="lg:py-3 lg:px-25 md:py-3"
-                  fontSize='lg:text-2xl md:text-2xl' 
+                  fontSize='lg:text-[0.8vw] md:text-2xl' 
                   border="border" 
                   hoverEffect={true}
                 />

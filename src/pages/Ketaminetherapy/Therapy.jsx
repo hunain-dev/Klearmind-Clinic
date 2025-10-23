@@ -47,7 +47,7 @@ const Therapy = () => {
         }
     ]
   return (
-    <div className='w-ful lg:mt-32 mt-11 grid grid-cols-1'>
+    <div className='w-ful lg:mt-32 mt-11 md:mt-30 grid grid-cols-1'>
         <div className='h-full flex items-center justify-center gap-2 flex-col'>
         <div className='flex items-center gap-2 justify-center '>
             <span className="w-2 h-2 rounded-full bg-orange-500 "></span>
@@ -56,10 +56,10 @@ const Therapy = () => {
 
             </span>
             </div>
-            <h2 className='figee text-[#32140C] lg:text-3xl md:text-[3vw]  text-center text-4xl mt-1' >How does Ketamine Therapy work?
+            <h2 className='figee text-[#32140C] lg:text-3xl md:text-[3vw]  text-center text-[5vw] mt-1' >How does Ketamine Therapy work?
             </h2>
             <div className='lg:mt-5 mt-4'>
-            <Button  btn="Watch the explainer video"  padding="lg:py-3 py-3 lg:px-6 px-11 md:px-5 md:py-3   " 
+            <Button  btn="Watch the explainer video"  padding="lg:py-3 py-3 lg:px-6 px-6 md:px-5 md:py-3   " 
               fontSize='md:text-[1vw] lg:text-[1vw] text-[3.2vw]' hoverEffect={false}/>
 
             </div>
@@ -94,7 +94,7 @@ const Therapy = () => {
                 {/* Right Content */}
                 <div className="w-full md:w-1/2 relative">
                   {/* Circle Number positioned on the main line */}
-                  <div className="absolute lg:left-[-4vw] md:left-[-5.7vw] left-[1.4vw] lg:top-5  -top-135  md:-top-1  flex flex-col items-center">
+                  <div className="absolute lg:left-[-4vw] md:left-[-5.7vw] left-[1.4vw] lg:top-5  -top-123  md:-top-1  flex flex-col items-center">
                     <div className="w-6 h-6 bg-[#FD8124] rounded-full flex items-center justify-center text-black figee text-sm font-bold z-10">
                       {index + 1}
                     </div>

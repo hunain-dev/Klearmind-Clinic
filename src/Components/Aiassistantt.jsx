@@ -66,7 +66,7 @@ You can also book an appointment directly here:
             >
               ×
             </button>
-          </div>
+          </div>  
 
           <div className="w-full">
             <img

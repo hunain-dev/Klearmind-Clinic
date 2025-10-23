@@ -27,17 +27,17 @@ const Trustedcommuntiy = () => {
               Award-Winning Care, Year After Year
             </span>
           </div>
-          <h2 className="fontspring text-[#361810] lg:text-4xl md:text-3xl md:leading-9 lg:leading-10 leading-10 text-[7.3vw]">
+          <h2 className="fontspring text-[#361810] lg:text-4xl md:text-3xl md:leading-9 lg:leading-10 leading-7 text-[6vw]">
             Trusted by the Sacramento community <br />
             ten years and counting
           </h2>
         </div>
 
         {/* Circle inside the box */}
-        <div className="relative lg:mt-10 md:mt-10 flex items-center justify-center overflow-hidden">
+        <div className="relative lg:mt-10 md:mt-10   mt-10 flex items-center justify-center overflow-hidden">
           <div 
             ref={circleRef}
-            className="circle  relative w-20 lg:left-5 -mt-23 h-96 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
+            className="circle  relative w-20 lg:left-5 lg:-mt-23 -mt-20 h-96 lg:w-[10vw] lg:h-[24vw] flex items-center justify-center"
           >
             {[...Array(8)].map((_, i) => {
               const angle = (i / 8) * 360; // 8 positions evenly

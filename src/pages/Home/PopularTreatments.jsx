@@ -55,8 +55,8 @@ const PopularTreatments = () => {
 
             {/* Right: Text/Paragraph */}
             <div className=" lg:px-6 md:px-10 text-center">
-              <h2 className="figee lg:text-[1.8vw] md:text-[2.2vw] text-[5vw] py-3 text-[#413D3D]">{elem.text}</h2>
-              <h4 className="figee lg:text-[1vw] text-[4vw] text-[#9E9C9B]">{elem.paragh}</h4>
+              <h2 className="figee lg:text-[1.8vw] md:text-[2vw] text-[5vw] py-3 text-[#413D3D]">{elem.text}</h2>
+              <h4 className="figee lg:text-[1vw] md:text-[1.6vw] text-[4vw] text-[#9E9C9B]">{elem.paragh}</h4>
             </div>
           </div>
         ))}

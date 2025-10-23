@@ -3940,7 +3940,7 @@ const BlogDetails = () => {
   }
 
   return (
-    <div className="h-full w-full lg:py-33 py-30 lg:px-60 px-2">
+    <div className="h-full w-full lg:py-33 py-30 lg:px-60 md:px-14 px-2">
 
       <div className=" w-full ">
         <div className=" flex items-center flex-col  justify-center w-full ">

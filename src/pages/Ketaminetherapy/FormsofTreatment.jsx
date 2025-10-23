@@ -42,8 +42,8 @@ const FormsofTreatment = () => {
                        </h2>
             </div>
             <div className='h-full lg:p-0 p-2  flex items-start lg:px-10 justify-start gap-4 flex-col'>
-                <h3 className='figee text-[#63605F] lg:text-sm text-[4.3vw] md:text-[2.2vw]'>There are 4 methods to deliver Ketamine treatments.</h3>
-                <Button btn="Learn more" padding="lg:py-3 lg:px-8 py-2" hoverEffect={false} textcolor="black" border="border border-black" to="/Treatmentmodalities"/>
+                <h3 className='figee text-[#63605F] lg:text-sm text-[4.3vw] md:text-[1.4vw]'>There are 4 methods to deliver Ketamine treatments.</h3>
+                <Button btn="Learn more" padding="lg:py-3 lg:px-8 py-2"  fontSize='lg:text-1xl md:text-sm'  hoverEffect={false} textcolor="black" border="border border-black" to="/Treatmentmodalities"/>
             </div>
         </div>
         <div className='lg:mt-7 mt-3 grid lg:grid-cols-4  grid-cols-2 md:grid-cols-4 gap-5 p-5'>

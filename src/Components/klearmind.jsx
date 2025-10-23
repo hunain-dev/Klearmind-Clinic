@@ -61,7 +61,7 @@ const Klearmind = () => {
             }
             </div>
  
-            <Button btn="am i a candidate" padding="py-3 px-9 " hoverEffect={false}/>
+            <Button btn="am i a candidate" padding="py-3 px-9" fontSize='lg:text-[1vw] md:text-[1.2vw] text-[3vw]' hoverEffect={false}/>
            
         </div>
         <div className='h-full w-full lg:-mt-15 mt-8'>
